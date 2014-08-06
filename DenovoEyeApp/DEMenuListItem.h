@@ -1,5 +1,5 @@
 //
-//  DEViewController.h
+//  DEMenuListItem.h
 //  DenovoEyeApp
 //
 //  Created by qbadmin on 05/08/14.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEViewController : UIViewController
 
+@interface DEMenuListItem : UITableViewCell
+@property (weak,nonatomic) IBOutlet UILabel *menuListItem;
 @end

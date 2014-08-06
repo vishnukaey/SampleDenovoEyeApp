@@ -14,13 +14,21 @@
 		221463561990A8A00084FDCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463551990A8A00084FDCB /* main.m */; };
 		2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463591990A8A00084FDCB /* DEAppDelegate.m */; };
 		2214635D1990A8A00084FDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2214635B1990A8A00084FDCB /* Main.storyboard */; };
-		221463601990A8A00084FDCB /* DEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214635F1990A8A00084FDCB /* DEViewController.m */; };
 		221463621990A8A00084FDCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221463611990A8A00084FDCB /* Images.xcassets */; };
 		221463691990A8A00084FDCB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221463681990A8A00084FDCB /* XCTest.framework */; };
 		2214636A1990A8A00084FDCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221463491990A8A00084FDCB /* Foundation.framework */; };
 		2214636B1990A8A00084FDCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214634D1990A8A00084FDCB /* UIKit.framework */; };
 		221463731990A8A00084FDCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221463711990A8A00084FDCB /* InfoPlist.strings */; };
 		221463751990A8A00084FDCB /* DenovoEyeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463741990A8A00084FDCB /* DenovoEyeAppTests.m */; };
+		221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214637F1990A8FB0084FDCB /* DEWelcomeViewController.m */; };
+		221463831990A96C0084FDCB /* DELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463821990A96C0084FDCB /* DELoginViewController.m */; };
+		221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463861990AF5A0084FDCB /* DEDashBoardViewController.m */; };
+		2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463891990AF820084FDCB /* DEMedicationViewController.m */; };
+		221463901990AFCA0084FDCB /* DEAddMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214638F1990AFCA0084FDCB /* DEAddMedicationViewController.m */; };
+		221463951990B57D0084FDCB /* Welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221463941990B57D0084FDCB /* Welcome.jpg */; };
+		222D02091990F29D005833A8 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D02081990F29D005833A8 /* Utilities.m */; };
+		222D020B1990FE7D005833A8 /* list-star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 222D020A1990FE7D005833A8 /* list-star-7.png */; };
+		222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D020D1991125E005833A8 /* DEMenuListItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +50,31 @@
 		221463531990A8A00084FDCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		221463551990A8A00084FDCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		221463571990A8A00084FDCB /* DenovoEyeApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DenovoEyeApp-Prefix.pch"; sourceTree = "<group>"; };
-		221463581990A8A00084FDCB /* DEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEAppDelegate.h; sourceTree = "<group>"; };
-		221463591990A8A00084FDCB /* DEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEAppDelegate.m; sourceTree = "<group>"; };
+		221463581990A8A00084FDCB /* DEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DEAppDelegate.h; path = DenovoEyeApp/DEAppDelegate.h; sourceTree = "<group>"; };
+		221463591990A8A00084FDCB /* DEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DEAppDelegate.m; path = DenovoEyeApp/DEAppDelegate.m; sourceTree = "<group>"; };
 		2214635C1990A8A00084FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2214635E1990A8A00084FDCB /* DEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEViewController.h; sourceTree = "<group>"; };
-		2214635F1990A8A00084FDCB /* DEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEViewController.m; sourceTree = "<group>"; };
 		221463611990A8A00084FDCB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		221463671990A8A00084FDCB /* DenovoEyeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DenovoEyeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221463681990A8A00084FDCB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		221463701990A8A00084FDCB /* DenovoEyeAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DenovoEyeAppTests-Info.plist"; sourceTree = "<group>"; };
 		221463721990A8A00084FDCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		221463741990A8A00084FDCB /* DenovoEyeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DenovoEyeAppTests.m; sourceTree = "<group>"; };
+		2214637E1990A8FB0084FDCB /* DEWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEWelcomeViewController.h; sourceTree = "<group>"; };
+		2214637F1990A8FB0084FDCB /* DEWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEWelcomeViewController.m; sourceTree = "<group>"; };
+		221463811990A96C0084FDCB /* DELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DELoginViewController.h; sourceTree = "<group>"; };
+		221463821990A96C0084FDCB /* DELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DELoginViewController.m; sourceTree = "<group>"; };
+		221463851990AF5A0084FDCB /* DEDashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEDashBoardViewController.h; sourceTree = "<group>"; };
+		221463861990AF5A0084FDCB /* DEDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEDashBoardViewController.m; sourceTree = "<group>"; };
+		221463881990AF820084FDCB /* DEMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationViewController.h; sourceTree = "<group>"; };
+		221463891990AF820084FDCB /* DEMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMedicationViewController.m; sourceTree = "<group>"; };
+		2214638E1990AFCA0084FDCB /* DEAddMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEAddMedicationViewController.h; sourceTree = "<group>"; };
+		2214638F1990AFCA0084FDCB /* DEAddMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAddMedicationViewController.m; sourceTree = "<group>"; };
+		221463941990B57D0084FDCB /* Welcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Welcome.jpg; sourceTree = "<group>"; };
+		222D02071990F29D005833A8 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		222D02081990F29D005833A8 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		222D020A1990FE7D005833A8 /* list-star-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-star-7.png"; sourceTree = "<group>"; };
+		222D020C1991125E005833A8 /* DEMenuListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMenuListItem.h; sourceTree = "<group>"; };
+		222D020D1991125E005833A8 /* DEMenuListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMenuListItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +104,11 @@
 		2214633D1990A8A00084FDCB = {
 			isa = PBXGroup;
 			children = (
+				2214635B1990A8A00084FDCB /* Main.storyboard */,
+				221463581990A8A00084FDCB /* DEAppDelegate.h */,
+				221463591990A8A00084FDCB /* DEAppDelegate.m */,
 				2214634F1990A8A00084FDCB /* DenovoEyeApp */,
+				221463501990A8A00084FDCB /* Supporting Files */,
 				2214636E1990A8A00084FDCB /* DenovoEyeAppTests */,
 				221463481990A8A00084FDCB /* Frameworks */,
 				221463471990A8A00084FDCB /* Products */,
@@ -112,13 +138,20 @@
 		2214634F1990A8A00084FDCB /* DenovoEyeApp */ = {
 			isa = PBXGroup;
 			children = (
-				221463581990A8A00084FDCB /* DEAppDelegate.h */,
-				221463591990A8A00084FDCB /* DEAppDelegate.m */,
-				2214635B1990A8A00084FDCB /* Main.storyboard */,
-				2214635E1990A8A00084FDCB /* DEViewController.h */,
-				2214635F1990A8A00084FDCB /* DEViewController.m */,
-				221463611990A8A00084FDCB /* Images.xcassets */,
-				221463501990A8A00084FDCB /* Supporting Files */,
+				2214638E1990AFCA0084FDCB /* DEAddMedicationViewController.h */,
+				2214638F1990AFCA0084FDCB /* DEAddMedicationViewController.m */,
+				221463881990AF820084FDCB /* DEMedicationViewController.h */,
+				221463891990AF820084FDCB /* DEMedicationViewController.m */,
+				221463851990AF5A0084FDCB /* DEDashBoardViewController.h */,
+				221463861990AF5A0084FDCB /* DEDashBoardViewController.m */,
+				221463811990A96C0084FDCB /* DELoginViewController.h */,
+				221463821990A96C0084FDCB /* DELoginViewController.m */,
+				2214637E1990A8FB0084FDCB /* DEWelcomeViewController.h */,
+				2214637F1990A8FB0084FDCB /* DEWelcomeViewController.m */,
+				222D02071990F29D005833A8 /* Utilities.h */,
+				222D02081990F29D005833A8 /* Utilities.m */,
+				222D020C1991125E005833A8 /* DEMenuListItem.h */,
+				222D020D1991125E005833A8 /* DEMenuListItem.m */,
 			);
 			path = DenovoEyeApp;
 			sourceTree = "<group>";
@@ -126,12 +159,15 @@
 		221463501990A8A00084FDCB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				221463911990B5530084FDCB /* Images */,
+				221463611990A8A00084FDCB /* Images.xcassets */,
 				221463511990A8A00084FDCB /* DenovoEyeApp-Info.plist */,
 				221463521990A8A00084FDCB /* InfoPlist.strings */,
 				221463551990A8A00084FDCB /* main.m */,
 				221463571990A8A00084FDCB /* DenovoEyeApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = DenovoEyeApp;
 			sourceTree = "<group>";
 		};
 		2214636E1990A8A00084FDCB /* DenovoEyeAppTests */ = {
@@ -150,6 +186,15 @@
 				221463711990A8A00084FDCB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		221463911990B5530084FDCB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				222D020A1990FE7D005833A8 /* list-star-7.png */,
+				221463941990B57D0084FDCB /* Welcome.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +276,9 @@
 			files = (
 				221463621990A8A00084FDCB /* Images.xcassets in Resources */,
 				221463541990A8A00084FDCB /* InfoPlist.strings in Resources */,
+				221463951990B57D0084FDCB /* Welcome.jpg in Resources */,
 				2214635D1990A8A00084FDCB /* Main.storyboard in Resources */,
+				222D020B1990FE7D005833A8 /* list-star-7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221463901990AFCA0084FDCB /* DEAddMedicationViewController.m in Sources */,
+				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
+				222D02091990F29D005833A8 /* Utilities.m in Sources */,
+				222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */,
+				221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */,
+				2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */,
 				221463561990A8A00084FDCB /* main.m in Sources */,
-				221463601990A8A00084FDCB /* DEViewController.m in Sources */,
 				2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */,
+				221463831990A96C0084FDCB /* DELoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +342,7 @@
 				2214635C1990A8A00084FDCB /* Base */,
 			);
 			name = Main.storyboard;
+			path = DenovoEyeApp;
 			sourceTree = "<group>";
 		};
 		221463711990A8A00084FDCB /* InfoPlist.strings */ = {
@@ -461,6 +515,7 @@
 				2214637A1990A8A00084FDCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2214637B1990A8A10084FDCB /* Build configuration list for PBXNativeTarget "DenovoEyeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +524,7 @@
 				2214637D1990A8A10084FDCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
