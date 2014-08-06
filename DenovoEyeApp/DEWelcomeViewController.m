@@ -22,12 +22,36 @@
     }
     return self;
 }
+- (IBAction)skip:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(![defaults boolForKey:@"loginStatus"]){
+        [self performSegueWithIdentifier:@"loginScreen" sender:self];
+    }
+    else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+- (IBAction)login:(id)sender {
+        [self performSegueWithIdentifier:@"loginScreen" sender:self];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
+
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(![defaults boolForKey:@"loginStatus"]){
+        self.login.enabled=YES;
+    }
+    else {
+        self.login.enabled=NO;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {

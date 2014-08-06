@@ -8,6 +8,9 @@
 
 #import "DEDashBoardViewController.h"
 #import "DEMenuListItem.h"
+#import "DEAddMedicationViewController.h"
+#import "DELoginViewController.h"
+
 @interface DEDashBoardViewController (){
     NSArray *menuItems;
 }
@@ -28,16 +31,10 @@
 {
     [super viewDidLoad];
     menuItems=[[NSArray alloc]initWithObjects:@"MEDICATION",@"APPOINMENTS",@"OCCULAR PRESSURE",@"REWARDS",@"TIMELINE",@"SETTINGS",@"HELP",@"TERMS & CONDITIONS", nil];
+        [self performSegueWithIdentifier:@"welcome" sender:self];
 }
 
 
--(void) viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if(![defaults boolForKey:@"loginStatus"]){
-        [self performSegueWithIdentifier:@"login" sender:self];
-    }
-}
 - (IBAction)viewMenuList:(id)sender {
     static bool menuViewShown=NO;
     menuViewShown=!menuViewShown;
@@ -105,6 +102,7 @@
 }
 
 -(void) viewWillDisappear:(BOOL)animated{
+    if(self.dashBoardMenuTable.frame.origin.x==0)
     [self viewMenuList:Nil];
 }
 

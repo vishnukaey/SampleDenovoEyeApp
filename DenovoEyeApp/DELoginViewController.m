@@ -25,7 +25,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    RAC(self.login,enabled) = [RACSignal
+                                combineLatest:@[ self.username.rac_textSignal, self.password.rac_textSignal]
+                                reduce:^(NSString *username, NSString *password) {
+                                    return @(![username isEqualToString:@""] && ![password isEqualToString:@""]);
+                                }];
 }
 - (IBAction)login:(id)sender {
     if([self.username.text isEqualToString:@"user"] && [self.password.text isEqualToString:@"password"]){

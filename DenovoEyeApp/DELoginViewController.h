@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa.h>
 
 @interface DELoginViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
-
+@property (weak, nonatomic) IBOutlet UIButton *login;
 @end

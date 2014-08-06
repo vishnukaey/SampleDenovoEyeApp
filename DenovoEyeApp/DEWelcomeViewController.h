@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DEWelcomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *login;
 
 @end
