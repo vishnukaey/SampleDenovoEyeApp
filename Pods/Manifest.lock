@@ -1,7 +1,4 @@
 PODS:
-  - AHEasing (1.2)
-  - BDBPopupViewController (1.1):
-    - AHEasing (~> 1.2)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3.1):
@@ -11,12 +8,9 @@ PODS:
     - ReactiveCocoa/Core
 
 DEPENDENCIES:
-  - BDBPopupViewController
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
-  AHEasing: ecab36683ef8c3a9a925fb85e892d1335e750f31
-  BDBPopupViewController: f0872d8fbda7bd57d30c0a5b5ee1dc6c4b038e93
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
 
 COCOAPODS: 0.33.1

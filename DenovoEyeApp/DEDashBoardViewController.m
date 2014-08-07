@@ -1,18 +1,19 @@
 //
-//  DEDashBoardViewController.m
+//  DEConfirmationViewController.m
 //  DenovoEyeApp
 //
-//  Created by qbadmin on 05/08/14.
+//  Created by Vishnu on 07/08/14.
 //  Copyright (c) 2014 Vishnu. All rights reserved.
 //
 
 #import "DEDashBoardViewController.h"
 #import "DEMenuListItem.h"
-#import "DEAddMedicationViewController.h"
 #import "DELoginViewController.h"
+#import "DEMedicationCell.h"
 
 @interface DEDashBoardViewController (){
     NSArray *menuItems;
+    NSArray *myMedicationList;
 }
 
 @end
@@ -34,6 +35,12 @@
         [self performSegueWithIdentifier:@"welcome" sender:self];
 }
 
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    DEDataHandler *handler=[[DEDataHandler alloc]init];
+    myMedicationList=[handler getMedicationList];
+    [self.dashBoardTableView reloadData];
+}
 
 - (IBAction)viewMenuList:(id)sender {
     static bool menuViewShown=NO;
@@ -66,7 +73,7 @@
     if(tableView == self.dashBoardMenuTable)
         return menuItems.count;
     else
-        return 10;
+        return myMedicationList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,14 +86,14 @@
     }
     else
     {
-        static NSString *CellIdentifier = @"Cell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        cell.textLabel.text=@"Hello";
+        static NSString *CellIdentifier = @"medication";
+        DEMedicationCell *cell =(DEMedicationCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        cell.drugName.text=[[myMedicationList objectAtIndex:indexPath.row] valueForKey:@"drugName"];
+        cell.drugImage.image=[UIImage imageWithData:[[myMedicationList objectAtIndex:indexPath.row] valueForKey:@"drugImage"]];
         return cell;
 
     }
 }
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(tableView == self.dashBoardMenuTable){

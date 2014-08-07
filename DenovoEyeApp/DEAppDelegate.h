@@ -1,12 +1,13 @@
 //
-//  DEAppDelegate.h
+//  DEConfirmationViewController.m
 //  DenovoEyeApp
 //
-//  Created by qbadmin on 05/08/14.
+//  Created by Vishnu on 07/08/14.
 //  Copyright (c) 2014 Vishnu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface DEAppDelegate : UIResponder <UIApplicationDelegate>
 

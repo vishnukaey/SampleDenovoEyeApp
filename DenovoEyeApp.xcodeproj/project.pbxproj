@@ -1,1373 +1,773 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>2214633D1990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2214635B1990A8A00084FDCB</string>
-				<string>221463581990A8A00084FDCB</string>
-				<string>221463591990A8A00084FDCB</string>
-				<string>2214634F1990A8A00084FDCB</string>
-				<string>221463501990A8A00084FDCB</string>
-				<string>2214636E1990A8A00084FDCB</string>
-				<string>221463481990A8A00084FDCB</string>
-				<string>221463471990A8A00084FDCB</string>
-				<string>7D6ADED3221B4224998764B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214633E1990A8A00084FDCB</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>DE</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Vishnu</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>221463661990A8A00084FDCB</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>221463451990A8A00084FDCB</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>221463411990A8A00084FDCB</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>2214633D1990A8A00084FDCB</string>
-			<key>productRefGroup</key>
-			<string>221463471990A8A00084FDCB</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>221463451990A8A00084FDCB</string>
-				<string>221463661990A8A00084FDCB</string>
-			</array>
-		</dict>
-		<key>221463411990A8A00084FDCB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>221463761990A8A00084FDCB</string>
-				<string>221463771990A8A00084FDCB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>221463421990A8A00084FDCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>221463901990AFCA0084FDCB</string>
-				<string>221463871990AF5A0084FDCB</string>
-				<string>222D02091990F29D005833A8</string>
-				<string>222D020E1991125E005833A8</string>
-				<string>221463801990A8FB0084FDCB</string>
-				<string>2214638A1990AF820084FDCB</string>
-				<string>221463561990A8A00084FDCB</string>
-				<string>2214635A1990A8A00084FDCB</string>
-				<string>221463831990A96C0084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>221463431990A8A00084FDCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2214634C1990A8A00084FDCB</string>
-				<string>2214634E1990A8A00084FDCB</string>
-				<string>2214634A1990A8A00084FDCB</string>
-				<string>FF9970E479A0471A958A14D2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>221463441990A8A00084FDCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>221463621990A8A00084FDCB</string>
-				<string>221463541990A8A00084FDCB</string>
-				<string>221463951990B57D0084FDCB</string>
-				<string>2214635D1990A8A00084FDCB</string>
-				<string>222D020B1990FE7D005833A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>221463451990A8A00084FDCB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>221463781990A8A00084FDCB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>62DFD7CACA1A47BEA2928F6E</string>
-				<string>221463421990A8A00084FDCB</string>
-				<string>221463431990A8A00084FDCB</string>
-				<string>221463441990A8A00084FDCB</string>
-				<string>48BA033F3FBC4B6DB92B6AEB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DenovoEyeApp</string>
-			<key>productName</key>
-			<string>DenovoEyeApp</string>
-			<key>productReference</key>
-			<string>221463461990A8A00084FDCB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>221463461990A8A00084FDCB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>DenovoEyeApp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>221463471990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463461990A8A00084FDCB</string>
-				<string>221463671990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463481990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463491990A8A00084FDCB</string>
-				<string>2214634B1990A8A00084FDCB</string>
-				<string>2214634D1990A8A00084FDCB</string>
-				<string>221463681990A8A00084FDCB</string>
-				<string>F5AFBF898F34404AB658F1E5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463491990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>2214634A1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463491990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214634B1990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>2214634C1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2214634B1990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214634D1990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>2214634E1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2214634D1990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214634F1990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2214638E1990AFCA0084FDCB</string>
-				<string>2214638F1990AFCA0084FDCB</string>
-				<string>221463881990AF820084FDCB</string>
-				<string>221463891990AF820084FDCB</string>
-				<string>221463851990AF5A0084FDCB</string>
-				<string>221463861990AF5A0084FDCB</string>
-				<string>221463811990A96C0084FDCB</string>
-				<string>221463821990A96C0084FDCB</string>
-				<string>2214637E1990A8FB0084FDCB</string>
-				<string>2214637F1990A8FB0084FDCB</string>
-				<string>222D02071990F29D005833A8</string>
-				<string>222D02081990F29D005833A8</string>
-				<string>222D020C1991125E005833A8</string>
-				<string>222D020D1991125E005833A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DenovoEyeApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463501990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463911990B5530084FDCB</string>
-				<string>221463611990A8A00084FDCB</string>
-				<string>221463511990A8A00084FDCB</string>
-				<string>221463521990A8A00084FDCB</string>
-				<string>221463551990A8A00084FDCB</string>
-				<string>221463571990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>path</key>
-			<string>DenovoEyeApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463511990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>DenovoEyeApp-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463521990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463531990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463531990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463541990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463521990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463551990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463561990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463551990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463571990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DenovoEyeApp-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463581990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DEAppDelegate.h</string>
-			<key>path</key>
-			<string>DenovoEyeApp/DEAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463591990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DEAppDelegate.m</string>
-			<key>path</key>
-			<string>DenovoEyeApp/DEAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214635A1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463591990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214635B1990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2214635C1990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>path</key>
-			<string>DenovoEyeApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214635C1990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214635D1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2214635B1990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463611990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463621990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463611990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463631990A8A00084FDCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>221463751990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>221463641990A8A00084FDCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>221463691990A8A00084FDCB</string>
-				<string>2214636B1990A8A00084FDCB</string>
-				<string>2214636A1990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>221463651990A8A00084FDCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>221463731990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>221463661990A8A00084FDCB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>2214637B1990A8A10084FDCB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>221463631990A8A00084FDCB</string>
-				<string>221463641990A8A00084FDCB</string>
-				<string>221463651990A8A00084FDCB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>2214636D1990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DenovoEyeAppTests</string>
-			<key>productName</key>
-			<string>DenovoEyeAppTests</string>
-			<key>productReference</key>
-			<string>221463671990A8A00084FDCB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>221463671990A8A00084FDCB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>DenovoEyeAppTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>221463681990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>221463691990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463681990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214636A1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463491990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214636B1990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2214634D1990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214636C1990A8A00084FDCB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>2214633E1990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>221463451990A8A00084FDCB</string>
-			<key>remoteInfo</key>
-			<string>DenovoEyeApp</string>
-		</dict>
-		<key>2214636D1990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>221463451990A8A00084FDCB</string>
-			<key>targetProxy</key>
-			<string>2214636C1990A8A00084FDCB</string>
-		</dict>
-		<key>2214636E1990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463741990A8A00084FDCB</string>
-				<string>2214636F1990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DenovoEyeAppTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214636F1990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463701990A8A00084FDCB</string>
-				<string>221463711990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463701990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>DenovoEyeAppTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463711990A8A00084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>221463721990A8A00084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463721990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463731990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463711990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463741990A8A00084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DenovoEyeAppTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463751990A8A00084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463741990A8A00084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463761990A8A00084FDCB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>221463771990A8A00084FDCB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>221463781990A8A00084FDCB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>221463791990A8A00084FDCB</string>
-				<string>2214637A1990A8A00084FDCB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>221463791990A8A00084FDCB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7D6ADED3221B4224998764B0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>DenovoEyeApp/DenovoEyeApp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DenovoEyeApp/DenovoEyeApp-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2214637A1990A8A00084FDCB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7D6ADED3221B4224998764B0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>DenovoEyeApp/DenovoEyeApp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DenovoEyeApp/DenovoEyeApp-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2214637B1990A8A10084FDCB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2214637C1990A8A10084FDCB</string>
-				<string>2214637D1990A8A10084FDCB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2214637C1990A8A10084FDCB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/DenovoEyeApp.app/DenovoEyeApp</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>DenovoEyeApp/DenovoEyeApp-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>DenovoEyeAppTests/DenovoEyeAppTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2214637D1990A8A10084FDCB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/DenovoEyeApp.app/DenovoEyeApp</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>DenovoEyeApp/DenovoEyeApp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DenovoEyeAppTests/DenovoEyeAppTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2214637E1990A8FB0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DEWelcomeViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214637F1990A8FB0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DEWelcomeViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463801990A8FB0084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2214637F1990A8FB0084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463811990A96C0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DELoginViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463821990A96C0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DELoginViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463831990A96C0084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463821990A96C0084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463851990AF5A0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DEDashBoardViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463861990AF5A0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DEDashBoardViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463871990AF5A0084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463861990AF5A0084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463881990AF820084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DEMedicationViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463891990AF820084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DEMedicationViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214638A1990AF820084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463891990AF820084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2214638E1990AFCA0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DEAddMedicationViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2214638F1990AFCA0084FDCB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DEAddMedicationViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463901990AFCA0084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2214638F1990AFCA0084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>221463911990B5530084FDCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>222D020A1990FE7D005833A8</string>
-				<string>221463941990B57D0084FDCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463941990B57D0084FDCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>Welcome.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221463951990B57D0084FDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>221463941990B57D0084FDCB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>222D02071990F29D005833A8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Utilities.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>222D02081990F29D005833A8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Utilities.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>222D02091990F29D005833A8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>222D02081990F29D005833A8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>222D020A1990FE7D005833A8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>list-star-7.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>222D020B1990FE7D005833A8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>222D020A1990FE7D005833A8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>222D020C1991125E005833A8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DEMenuListItem.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>222D020D1991125E005833A8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DEMenuListItem.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>222D020E1991125E005833A8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>222D020D1991125E005833A8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>48BA033F3FBC4B6DB92B6AEB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>62DFD7CACA1A47BEA2928F6E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7D6ADED3221B4224998764B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5AFBF898F34404AB658F1E5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FF9970E479A0471A958A14D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5AFBF898F34404AB658F1E5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>2214633E1990A8A00084FDCB</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */; };
+		220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */; };
+		220EAC9A1993931200E8FCC6 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC991993931200E8FCC6 /* Entity.m */; };
+		220EAC9D1993948600E8FCC6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EAC9C1993948600E8FCC6 /* CoreData.framework */; };
+		2214634A1990A8A00084FDCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221463491990A8A00084FDCB /* Foundation.framework */; };
+		2214634C1990A8A00084FDCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214634B1990A8A00084FDCB /* CoreGraphics.framework */; };
+		2214634E1990A8A00084FDCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214634D1990A8A00084FDCB /* UIKit.framework */; };
+		221463541990A8A00084FDCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221463521990A8A00084FDCB /* InfoPlist.strings */; };
+		221463561990A8A00084FDCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463551990A8A00084FDCB /* main.m */; };
+		2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463591990A8A00084FDCB /* DEAppDelegate.m */; };
+		2214635D1990A8A00084FDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2214635B1990A8A00084FDCB /* Main.storyboard */; };
+		221463621990A8A00084FDCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221463611990A8A00084FDCB /* Images.xcassets */; };
+		221463691990A8A00084FDCB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221463681990A8A00084FDCB /* XCTest.framework */; };
+		2214636A1990A8A00084FDCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221463491990A8A00084FDCB /* Foundation.framework */; };
+		2214636B1990A8A00084FDCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214634D1990A8A00084FDCB /* UIKit.framework */; };
+		221463731990A8A00084FDCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221463711990A8A00084FDCB /* InfoPlist.strings */; };
+		221463751990A8A00084FDCB /* DenovoEyeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463741990A8A00084FDCB /* DenovoEyeAppTests.m */; };
+		221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214637F1990A8FB0084FDCB /* DEWelcomeViewController.m */; };
+		221463831990A96C0084FDCB /* DELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463821990A96C0084FDCB /* DELoginViewController.m */; };
+		221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463861990AF5A0084FDCB /* DEDashBoardViewController.m */; };
+		2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221463891990AF820084FDCB /* DEMedicationViewController.m */; };
+		221463951990B57D0084FDCB /* Welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221463941990B57D0084FDCB /* Welcome.jpg */; };
+		222D02091990F29D005833A8 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D02081990F29D005833A8 /* Utilities.m */; };
+		222D020B1990FE7D005833A8 /* list-star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 222D020A1990FE7D005833A8 /* list-star-7.png */; };
+		222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D020D1991125E005833A8 /* DEMenuListItem.m */; };
+		22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22323D481992568A003B6966 /* DEConfirmViewController.m */; };
+		22D365931993ABA500BC11AF /* DEMedicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365921993ABA500BC11AF /* DEMedicationCell.m */; };
+		22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365981993B8D000BC11AF /* DEReccurenceViewController.m */; };
+		22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3659B1993B8E000BC11AF /* DEReminderViewController.m */; };
+		22D3659F1993B8F300BC11AF /* DEAppoinmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3659E1993B8F300BC11AF /* DEAppoinmentViewController.m */; };
+		22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365A11993B95900BC11AF /* DEConfirmationViewController.m */; };
+		22EAD908199210DD0017508F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD907199210DD0017508F /* AudioToolbox.framework */; };
+		22EAD90A199210E70017508F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD909199210E70017508F /* CFNetwork.framework */; };
+		22EAD90C199211020017508F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD90B199211020017508F /* CoreLocation.framework */; };
+		22EAD90E199211190017508F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD90D199211190017508F /* libz.dylib */; };
+		22EAD912199211520017508F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD911199211520017508F /* MobileCoreServices.framework */; };
+		22EAD914199211620017508F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD913199211620017508F /* QuartzCore.framework */; };
+		22EAD9161992116B0017508F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD9151992116B0017508F /* StoreKit.framework */; };
+		22EAD918199211710017508F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD917199211710017508F /* Security.framework */; };
+		22EAD91A1992117B0017508F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD9191992117B0017508F /* SystemConfiguration.framework */; };
+		22EAD922199213FF0017508F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD921199213FF0017508F /* Parse.framework */; };
+		22EAD927199214C90017508F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD925199214740017508F /* Twitter.framework */; };
+		22EAD929199230170017508F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD928199230170017508F /* Social.framework */; };
+		22EAD92B199230360017508F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD92A199230360017508F /* Accounts.framework */; };
+		22EAD92F1992309A0017508F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD92E1992309A0017508F /* FacebookSDK.framework */; };
+		22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAD931199235390017508F /* ParseMedicationDBModal.m */; };
+		FF9970E479A0471A958A14D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AFBF898F34404AB658F1E5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2214636C1990A8A00084FDCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2214633E1990A8A00084FDCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 221463451990A8A00084FDCB;
+			remoteInfo = DenovoEyeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220EAC9219938EBC00E8FCC6 /* DEDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEDataHandler.h; sourceTree = "<group>"; };
+		220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEDataHandler.m; sourceTree = "<group>"; };
+		220EAC9619938EFA00E8FCC6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		220EAC981993931200E8FCC6 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		220EAC991993931200E8FCC6 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		220EAC9C1993948600E8FCC6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		221463461990A8A00084FDCB /* DenovoEyeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DenovoEyeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		221463491990A8A00084FDCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2214634B1990A8A00084FDCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2214634D1990A8A00084FDCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		221463511990A8A00084FDCB /* DenovoEyeApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DenovoEyeApp-Info.plist"; sourceTree = "<group>"; };
+		221463531990A8A00084FDCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		221463551990A8A00084FDCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		221463571990A8A00084FDCB /* DenovoEyeApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DenovoEyeApp-Prefix.pch"; sourceTree = "<group>"; };
+		221463581990A8A00084FDCB /* DEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEAppDelegate.h; sourceTree = "<group>"; };
+		221463591990A8A00084FDCB /* DEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEAppDelegate.m; sourceTree = "<group>"; };
+		2214635C1990A8A00084FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		221463611990A8A00084FDCB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		221463671990A8A00084FDCB /* DenovoEyeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DenovoEyeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221463681990A8A00084FDCB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		221463701990A8A00084FDCB /* DenovoEyeAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DenovoEyeAppTests-Info.plist"; sourceTree = "<group>"; };
+		221463721990A8A00084FDCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		221463741990A8A00084FDCB /* DenovoEyeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DenovoEyeAppTests.m; sourceTree = "<group>"; };
+		2214637E1990A8FB0084FDCB /* DEWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEWelcomeViewController.h; sourceTree = "<group>"; };
+		2214637F1990A8FB0084FDCB /* DEWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEWelcomeViewController.m; sourceTree = "<group>"; };
+		221463811990A96C0084FDCB /* DELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DELoginViewController.h; sourceTree = "<group>"; };
+		221463821990A96C0084FDCB /* DELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DELoginViewController.m; sourceTree = "<group>"; };
+		221463851990AF5A0084FDCB /* DEDashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEDashBoardViewController.h; sourceTree = "<group>"; };
+		221463861990AF5A0084FDCB /* DEDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEDashBoardViewController.m; sourceTree = "<group>"; };
+		221463881990AF820084FDCB /* DEMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationViewController.h; sourceTree = "<group>"; };
+		221463891990AF820084FDCB /* DEMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMedicationViewController.m; sourceTree = "<group>"; };
+		221463941990B57D0084FDCB /* Welcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Welcome.jpg; sourceTree = "<group>"; };
+		222D02071990F29D005833A8 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		222D02081990F29D005833A8 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		222D020A1990FE7D005833A8 /* list-star-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-star-7.png"; sourceTree = "<group>"; };
+		222D020C1991125E005833A8 /* DEMenuListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMenuListItem.h; sourceTree = "<group>"; };
+		222D020D1991125E005833A8 /* DEMenuListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMenuListItem.m; sourceTree = "<group>"; };
+		22323D471992568A003B6966 /* DEConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmViewController.h; sourceTree = "<group>"; };
+		22323D481992568A003B6966 /* DEConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmViewController.m; sourceTree = "<group>"; };
+		22D365911993ABA500BC11AF /* DEMedicationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationCell.h; sourceTree = "<group>"; };
+		22D365921993ABA500BC11AF /* DEMedicationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMedicationCell.m; sourceTree = "<group>"; };
+		22D365971993B8D000BC11AF /* DEReccurenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEReccurenceViewController.h; sourceTree = "<group>"; };
+		22D365981993B8D000BC11AF /* DEReccurenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEReccurenceViewController.m; sourceTree = "<group>"; };
+		22D3659A1993B8E000BC11AF /* DEReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEReminderViewController.h; sourceTree = "<group>"; };
+		22D3659B1993B8E000BC11AF /* DEReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEReminderViewController.m; sourceTree = "<group>"; };
+		22D3659D1993B8F300BC11AF /* DEAppoinmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEAppoinmentViewController.h; sourceTree = "<group>"; };
+		22D3659E1993B8F300BC11AF /* DEAppoinmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAppoinmentViewController.m; sourceTree = "<group>"; };
+		22D365A01993B95900BC11AF /* DEConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmationViewController.h; sourceTree = "<group>"; };
+		22D365A11993B95900BC11AF /* DEConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmationViewController.m; sourceTree = "<group>"; };
+		22EAD907199210DD0017508F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		22EAD909199210E70017508F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22EAD90B199211020017508F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		22EAD90D199211190017508F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		22EAD911199211520017508F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		22EAD913199211620017508F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		22EAD9151992116B0017508F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		22EAD917199211710017508F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22EAD9191992117B0017508F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22EAD921199213FF0017508F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		22EAD925199214740017508F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		22EAD928199230170017508F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		22EAD92A199230360017508F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		22EAD92E1992309A0017508F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		22EAD930199235390017508F /* ParseMedicationDBModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseMedicationDBModal.h; sourceTree = "<group>"; };
+		22EAD931199235390017508F /* ParseMedicationDBModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseMedicationDBModal.m; sourceTree = "<group>"; };
+		7D6ADED3221B4224998764B0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F5AFBF898F34404AB658F1E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		221463431990A8A00084FDCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220EAC9D1993948600E8FCC6 /* CoreData.framework in Frameworks */,
+				22EAD92B199230360017508F /* Accounts.framework in Frameworks */,
+				22EAD929199230170017508F /* Social.framework in Frameworks */,
+				22EAD927199214C90017508F /* Twitter.framework in Frameworks */,
+				22EAD90A199210E70017508F /* CFNetwork.framework in Frameworks */,
+				22EAD91A1992117B0017508F /* SystemConfiguration.framework in Frameworks */,
+				22EAD92F1992309A0017508F /* FacebookSDK.framework in Frameworks */,
+				22EAD918199211710017508F /* Security.framework in Frameworks */,
+				22EAD9161992116B0017508F /* StoreKit.framework in Frameworks */,
+				22EAD914199211620017508F /* QuartzCore.framework in Frameworks */,
+				22EAD912199211520017508F /* MobileCoreServices.framework in Frameworks */,
+				22EAD90E199211190017508F /* libz.dylib in Frameworks */,
+				22EAD90C199211020017508F /* CoreLocation.framework in Frameworks */,
+				2214634C1990A8A00084FDCB /* CoreGraphics.framework in Frameworks */,
+				22EAD908199210DD0017508F /* AudioToolbox.framework in Frameworks */,
+				22EAD922199213FF0017508F /* Parse.framework in Frameworks */,
+				2214634E1990A8A00084FDCB /* UIKit.framework in Frameworks */,
+				2214634A1990A8A00084FDCB /* Foundation.framework in Frameworks */,
+				FF9970E479A0471A958A14D2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221463641990A8A00084FDCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221463691990A8A00084FDCB /* XCTest.framework in Frameworks */,
+				2214636B1990A8A00084FDCB /* UIKit.framework in Frameworks */,
+				2214636A1990A8A00084FDCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220EAC9B1993932000E8FCC6 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */,
+				220EAC981993931200E8FCC6 /* Entity.h */,
+				220EAC991993931200E8FCC6 /* Entity.m */,
+			);
+			name = Coredata;
+			sourceTree = "<group>";
+		};
+		2214633D1990A8A00084FDCB = {
+			isa = PBXGroup;
+			children = (
+				2214634F1990A8A00084FDCB /* DenovoEyeApp */,
+				221463501990A8A00084FDCB /* Supporting Files */,
+				221463481990A8A00084FDCB /* Frameworks */,
+				221463471990A8A00084FDCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		221463471990A8A00084FDCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				221463461990A8A00084FDCB /* DenovoEyeApp.app */,
+				221463671990A8A00084FDCB /* DenovoEyeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		221463481990A8A00084FDCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				220EAC9C1993948600E8FCC6 /* CoreData.framework */,
+				22EAD92E1992309A0017508F /* FacebookSDK.framework */,
+				22EAD92A199230360017508F /* Accounts.framework */,
+				22EAD928199230170017508F /* Social.framework */,
+				22EAD925199214740017508F /* Twitter.framework */,
+				22EAD921199213FF0017508F /* Parse.framework */,
+				22EAD9191992117B0017508F /* SystemConfiguration.framework */,
+				22EAD917199211710017508F /* Security.framework */,
+				22EAD9151992116B0017508F /* StoreKit.framework */,
+				22EAD913199211620017508F /* QuartzCore.framework */,
+				22EAD911199211520017508F /* MobileCoreServices.framework */,
+				22EAD90D199211190017508F /* libz.dylib */,
+				22EAD90B199211020017508F /* CoreLocation.framework */,
+				22EAD909199210E70017508F /* CFNetwork.framework */,
+				22EAD907199210DD0017508F /* AudioToolbox.framework */,
+				221463491990A8A00084FDCB /* Foundation.framework */,
+				2214634B1990A8A00084FDCB /* CoreGraphics.framework */,
+				2214634D1990A8A00084FDCB /* UIKit.framework */,
+				221463681990A8A00084FDCB /* XCTest.framework */,
+				F5AFBF898F34404AB658F1E5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2214634F1990A8A00084FDCB /* DenovoEyeApp */ = {
+			isa = PBXGroup;
+			children = (
+				2214635B1990A8A00084FDCB /* Main.storyboard */,
+				221463581990A8A00084FDCB /* DEAppDelegate.h */,
+				221463591990A8A00084FDCB /* DEAppDelegate.m */,
+				22EAD934199238780017508F /* ViewControllers */,
+				22EAD9381992391A0017508F /* Views */,
+				22EAD939199239660017508F /* ModalClasses */,
+				22EAD93A199239830017508F /* Utilities */,
+			);
+			path = DenovoEyeApp;
+			sourceTree = "<group>";
+		};
+		221463501990A8A00084FDCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				220EAC9B1993932000E8FCC6 /* Coredata */,
+				221463911990B5530084FDCB /* Images */,
+				2214636E1990A8A00084FDCB /* DenovoEyeAppTests */,
+				7D6ADED3221B4224998764B0 /* Pods.xcconfig */,
+				221463611990A8A00084FDCB /* Images.xcassets */,
+				221463511990A8A00084FDCB /* DenovoEyeApp-Info.plist */,
+				221463521990A8A00084FDCB /* InfoPlist.strings */,
+				221463551990A8A00084FDCB /* main.m */,
+				221463571990A8A00084FDCB /* DenovoEyeApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = DenovoEyeApp;
+			sourceTree = "<group>";
+		};
+		2214636E1990A8A00084FDCB /* DenovoEyeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				221463741990A8A00084FDCB /* DenovoEyeAppTests.m */,
+				2214636F1990A8A00084FDCB /* Supporting Files */,
+			);
+			path = DenovoEyeAppTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		2214636F1990A8A00084FDCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				221463701990A8A00084FDCB /* DenovoEyeAppTests-Info.plist */,
+				221463711990A8A00084FDCB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		221463911990B5530084FDCB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				222D020A1990FE7D005833A8 /* list-star-7.png */,
+				221463941990B57D0084FDCB /* Welcome.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		22EAD934199238780017508F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22EAD937199238C70017508F /* LoginViewControllers */,
+				22EAD936199238AC0017508F /* MedicationViewController */,
+				22EAD935199238920017508F /* DashBoardViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22EAD935199238920017508F /* DashBoardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				221463851990AF5A0084FDCB /* DEDashBoardViewController.h */,
+				221463861990AF5A0084FDCB /* DEDashBoardViewController.m */,
+			);
+			name = DashBoardViewController;
+			sourceTree = "<group>";
+		};
+		22EAD936199238AC0017508F /* MedicationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				221463881990AF820084FDCB /* DEMedicationViewController.h */,
+				221463891990AF820084FDCB /* DEMedicationViewController.m */,
+				22323D471992568A003B6966 /* DEConfirmViewController.h */,
+				22323D481992568A003B6966 /* DEConfirmViewController.m */,
+				22D365971993B8D000BC11AF /* DEReccurenceViewController.h */,
+				22D365981993B8D000BC11AF /* DEReccurenceViewController.m */,
+				22D3659A1993B8E000BC11AF /* DEReminderViewController.h */,
+				22D3659B1993B8E000BC11AF /* DEReminderViewController.m */,
+				22D3659D1993B8F300BC11AF /* DEAppoinmentViewController.h */,
+				22D3659E1993B8F300BC11AF /* DEAppoinmentViewController.m */,
+				22D365A01993B95900BC11AF /* DEConfirmationViewController.h */,
+				22D365A11993B95900BC11AF /* DEConfirmationViewController.m */,
+			);
+			name = MedicationViewController;
+			sourceTree = "<group>";
+		};
+		22EAD937199238C70017508F /* LoginViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				221463811990A96C0084FDCB /* DELoginViewController.h */,
+				221463821990A96C0084FDCB /* DELoginViewController.m */,
+				2214637E1990A8FB0084FDCB /* DEWelcomeViewController.h */,
+				2214637F1990A8FB0084FDCB /* DEWelcomeViewController.m */,
+			);
+			name = LoginViewControllers;
+			sourceTree = "<group>";
+		};
+		22EAD9381992391A0017508F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				222D020C1991125E005833A8 /* DEMenuListItem.h */,
+				222D020D1991125E005833A8 /* DEMenuListItem.m */,
+				22D365911993ABA500BC11AF /* DEMedicationCell.h */,
+				22D365921993ABA500BC11AF /* DEMedicationCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		22EAD939199239660017508F /* ModalClasses */ = {
+			isa = PBXGroup;
+			children = (
+				22EAD930199235390017508F /* ParseMedicationDBModal.h */,
+				22EAD931199235390017508F /* ParseMedicationDBModal.m */,
+				220EAC9219938EBC00E8FCC6 /* DEDataHandler.h */,
+				220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */,
+			);
+			name = ModalClasses;
+			sourceTree = "<group>";
+		};
+		22EAD93A199239830017508F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				222D02071990F29D005833A8 /* Utilities.h */,
+				222D02081990F29D005833A8 /* Utilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		221463451990A8A00084FDCB /* DenovoEyeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221463781990A8A00084FDCB /* Build configuration list for PBXNativeTarget "DenovoEyeApp" */;
+			buildPhases = (
+				62DFD7CACA1A47BEA2928F6E /* Check Pods Manifest.lock */,
+				221463421990A8A00084FDCB /* Sources */,
+				221463431990A8A00084FDCB /* Frameworks */,
+				221463441990A8A00084FDCB /* Resources */,
+				48BA033F3FBC4B6DB92B6AEB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DenovoEyeApp;
+			productName = DenovoEyeApp;
+			productReference = 221463461990A8A00084FDCB /* DenovoEyeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		221463661990A8A00084FDCB /* DenovoEyeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2214637B1990A8A10084FDCB /* Build configuration list for PBXNativeTarget "DenovoEyeAppTests" */;
+			buildPhases = (
+				221463631990A8A00084FDCB /* Sources */,
+				221463641990A8A00084FDCB /* Frameworks */,
+				221463651990A8A00084FDCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2214636D1990A8A00084FDCB /* PBXTargetDependency */,
+			);
+			name = DenovoEyeAppTests;
+			productName = DenovoEyeAppTests;
+			productReference = 221463671990A8A00084FDCB /* DenovoEyeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2214633E1990A8A00084FDCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DE;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Vishnu;
+				TargetAttributes = {
+					221463661990A8A00084FDCB = {
+						TestTargetID = 221463451990A8A00084FDCB;
+					};
+				};
+			};
+			buildConfigurationList = 221463411990A8A00084FDCB /* Build configuration list for PBXProject "DenovoEyeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2214633D1990A8A00084FDCB;
+			productRefGroup = 221463471990A8A00084FDCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				221463451990A8A00084FDCB /* DenovoEyeApp */,
+				221463661990A8A00084FDCB /* DenovoEyeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		221463441990A8A00084FDCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221463621990A8A00084FDCB /* Images.xcassets in Resources */,
+				221463541990A8A00084FDCB /* InfoPlist.strings in Resources */,
+				221463951990B57D0084FDCB /* Welcome.jpg in Resources */,
+				2214635D1990A8A00084FDCB /* Main.storyboard in Resources */,
+				222D020B1990FE7D005833A8 /* list-star-7.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221463651990A8A00084FDCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221463731990A8A00084FDCB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48BA033F3FBC4B6DB92B6AEB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DFD7CACA1A47BEA2928F6E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		221463421990A8A00084FDCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220EAC9A1993931200E8FCC6 /* Entity.m in Sources */,
+				22D3659F1993B8F300BC11AF /* DEAppoinmentViewController.m in Sources */,
+				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
+				222D02091990F29D005833A8 /* Utilities.m in Sources */,
+				22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */,
+				222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */,
+				22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */,
+				221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */,
+				2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */,
+				22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */,
+				22D365931993ABA500BC11AF /* DEMedicationCell.m in Sources */,
+				220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */,
+				221463561990A8A00084FDCB /* main.m in Sources */,
+				2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */,
+				22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */,
+				22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */,
+				220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */,
+				221463831990A96C0084FDCB /* DELoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221463631990A8A00084FDCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221463751990A8A00084FDCB /* DenovoEyeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2214636D1990A8A00084FDCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 221463451990A8A00084FDCB /* DenovoEyeApp */;
+			targetProxy = 2214636C1990A8A00084FDCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		221463521990A8A00084FDCB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221463531990A8A00084FDCB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2214635B1990A8A00084FDCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2214635C1990A8A00084FDCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		221463711990A8A00084FDCB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221463721990A8A00084FDCB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		221463761990A8A00084FDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		221463771990A8A00084FDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221463791990A8A00084FDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6ADED3221B4224998764B0 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/QBAdmin/Documents/MyProjects/DenovoEyeApp,
+					"/Users/QBAdmin/Downloads/FacebookSDK\\ copy\\ 2",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DenovoEyeApp/DenovoEyeApp-Prefix.pch";
+				INFOPLIST_FILE = "DenovoEyeApp/DenovoEyeApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2214637A1990A8A00084FDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6ADED3221B4224998764B0 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/QBAdmin/Documents/MyProjects/DenovoEyeApp,
+					"/Users/QBAdmin/Downloads/FacebookSDK\\ copy\\ 2",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DenovoEyeApp/DenovoEyeApp-Prefix.pch";
+				INFOPLIST_FILE = "DenovoEyeApp/DenovoEyeApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2214637C1990A8A10084FDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DenovoEyeApp.app/DenovoEyeApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DenovoEyeApp/DenovoEyeApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DenovoEyeAppTests/DenovoEyeAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2214637D1990A8A10084FDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DenovoEyeApp.app/DenovoEyeApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DenovoEyeApp/DenovoEyeApp-Prefix.pch";
+				INFOPLIST_FILE = "DenovoEyeAppTests/DenovoEyeAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		221463411990A8A00084FDCB /* Build configuration list for PBXProject "DenovoEyeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221463761990A8A00084FDCB /* Debug */,
+				221463771990A8A00084FDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221463781990A8A00084FDCB /* Build configuration list for PBXNativeTarget "DenovoEyeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221463791990A8A00084FDCB /* Debug */,
+				2214637A1990A8A00084FDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2214637B1990A8A10084FDCB /* Build configuration list for PBXNativeTarget "DenovoEyeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2214637C1990A8A10084FDCB /* Debug */,
+				2214637D1990A8A10084FDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				220EAC9619938EFA00E8FCC6 /* Model.xcdatamodel */,
+			);
+			currentVersion = 220EAC9619938EFA00E8FCC6 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2214633E1990A8A00084FDCB /* Project object */;
+}

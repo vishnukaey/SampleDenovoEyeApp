@@ -1,19 +1,23 @@
 //
-//  DEAppDelegate.m
+//  DEConfirmationViewController.m
 //  DenovoEyeApp
 //
-//  Created by qbadmin on 05/08/14.
+//  Created by Vishnu on 07/08/14.
 //  Copyright (c) 2014 Vishnu. All rights reserved.
 //
 
 #import "DEAppDelegate.h"
+#import "ParseMedicationDBModal.h"
 
 @implementation DEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [ParseMedicationDBModal registerSubclass];
+    [Parse setApplicationId:@"VcBICl4IP5RrXIU2iDWcKa0OoXBogw41yKSUg0vU"
+                    clientKey:@"ClA0kFnr17ucrjeLEVaTEBxW4Med7FSunkgzzEwY"];
     return YES;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

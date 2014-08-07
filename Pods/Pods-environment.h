@@ -6,18 +6,6 @@
 // project.
 
 
-// AHEasing
-#define COCOAPODS_POD_AVAILABLE_AHEasing
-#define COCOAPODS_VERSION_MAJOR_AHEasing 1
-#define COCOAPODS_VERSION_MINOR_AHEasing 2
-#define COCOAPODS_VERSION_PATCH_AHEasing 0
-
-// BDBPopupViewController
-#define COCOAPODS_POD_AVAILABLE_BDBPopupViewController
-#define COCOAPODS_VERSION_MAJOR_BDBPopupViewController 1
-#define COCOAPODS_VERSION_MINOR_BDBPopupViewController 1
-#define COCOAPODS_VERSION_PATCH_BDBPopupViewController 0
-
 // ReactiveCocoa
 #define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2

@@ -14,4 +14,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "Utilities.h"
+    #import "ParseMedicationDBModal.h"
+    #import <CoreData/CoreData.h>
+    #import "DEDataHandler.h"
+    #import "Entity.h"
 #endif
