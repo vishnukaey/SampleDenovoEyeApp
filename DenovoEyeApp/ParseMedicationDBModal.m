@@ -13,8 +13,11 @@
 @dynamic drugImage;
 @dynamic drugName;
 @dynamic expiryDate;
+@dynamic frequency;
+@dynamic reccurence;
 
 + (NSString *) parseClassName{
     return @"Medication";
 }
+
 @end

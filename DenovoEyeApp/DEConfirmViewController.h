@@ -9,12 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DEDataHandler.h"
 
-@protocol DEConfirmViewControllerDelegate <NSObject>
--(void) popToMedication;
-@end
-
 @interface DEConfirmViewController : UIViewController
-@property (nonatomic, weak) id <DEConfirmViewControllerDelegate> delegate;
 @property (weak, nonatomic ) IBOutlet UIImageView *drugImage;
 @property (weak, nonatomic ) IBOutlet UIButton *confirm;
 @property (weak, nonatomic ) IBOutlet UIButton *cancel;

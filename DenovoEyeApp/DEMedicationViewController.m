@@ -8,8 +8,9 @@
 #import "DEMedicationViewController.h"
 #import "ParseMedicationDBModal.h"
 #import "DEConfirmViewController.h"
+#import "DEReccurenceViewController.h"
 
-@interface DEMedicationViewController ()<DEConfirmViewControllerDelegate>{
+@interface DEMedicationViewController (){
     UIImage *drugImage;
     ParseMedicationDBModal *mod;
 }
@@ -45,31 +46,35 @@
             [Utilities showAlert:@"No Matches" withTitle:@"Sorry"];
         }
         self.search.enabled=YES;
-        self.search.text=@"";
     }];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    DEConfirmViewController *confirm=[[DEConfirmViewController alloc]init];
-    confirm.delegate=self;
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    DEConfirmViewController *confirm=[segue destinationViewController];
-    confirm.delegate=self;
-    confirm.medication=mod;
+    if([segue.identifier isEqualToString:@"confirm"]){
+        DEConfirmViewController *confirm=[segue destinationViewController];
+        confirm.medication=mod;
+    }
+    if([segue.identifier isEqualToString:@"reccurence"]){
+        DEReccurenceViewController *reccur=[segue destinationViewController];
+        reccur.medication=mod;
+
+        
+    }
 }
 
--(void)popToMedication{
-    [self.navigationController popViewControllerAnimated:YES];
+-(void) viewDidAppear:(BOOL)animated{
+    [self.search becomeFirstResponder];
 }
 - (IBAction)pushToReccurenceController:(id)sender {
+    [self performSegueWithIdentifier:@"reccurence" sender:self];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [textField resignFirstResponder];
     [self go:self];
     return YES;
 }

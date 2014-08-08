@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    menuItems=[[NSArray alloc]initWithObjects:@"MEDICATION",@"APPOINMENTS",@"OCCULAR PRESSURE",@"REWARDS",@"TIMELINE",@"SETTINGS",@"HELP",@"TERMS & CONDITIONS", nil];
+    menuItems=[[NSArray alloc]initWithObjects:@"MEDICATION",@"APPOINMENTS",@"OCULAR PRESSURE",@"REWARDS",@"TIMELINE",@"SETTINGS",@"HELP",@"TERMS & CONDITIONS", nil];
         [self performSegueWithIdentifier:@"welcome" sender:self];
 }
 

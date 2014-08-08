@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEReminderViewController : UIViewController
-
+@interface DEReminderViewController : UIViewController<UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *reminderView;
+@property (assign, nonatomic ) ParseMedicationDBModal *medication;
 @end

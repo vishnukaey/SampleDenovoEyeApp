@@ -36,25 +36,49 @@
     NSMutableArray *mutableArray=[[NSMutableArray alloc]init];
     for (Entity *entity in array) {
         NSMutableDictionary *dict=[[NSMutableDictionary alloc]init];
-        [dict setObject:entity.drugName forKey:@"drugName"];
-        [dict setObject:entity.drugImage forKey:@"drugImage"];
-        [mutableArray addObject:dict];
+            if(!(entity.drugImage == nil) && !(entity.drugName == nil)){
+                [dict setObject:entity.drugName forKey:@"drugName"];
+                [dict setObject:entity.drugImage forKey:@"drugImage"];
+                [mutableArray addObject:dict];
+            }
     }
     return mutableArray;
 }
 
 -(void) saveMyMedication:(id)medication{
-    NSManagedObjectContext *context =
-    [self managedObjectContext];
-    NSError *error;
+    if([self notAnExistingMedication:medication]){
+        NSManagedObjectContext *context =
+        [self managedObjectContext];
+        NSError *error;
+        ParseMedicationDBModal *modal=[[ParseMedicationDBModal alloc]init];
+        modal=medication;
+        NSManagedObject *newContact;
+        newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Entity"
+                                               inManagedObjectContext:context];
+        [newContact setValue:modal.drugName forKey:@"drugName"];
+        [newContact setValue:[modal.drugImage getData] forKey:@"drugImage"];
+        [context save:&error];
+    }
+}
+
+-(bool)notAnExistingMedication:(id)medication{
+    NSArray *checkMedicationList=[[NSArray alloc]init];
+    checkMedicationList=[self getMedicationList];
     ParseMedicationDBModal *modal=[[ParseMedicationDBModal alloc]init];
     modal=medication;
-    NSManagedObject *newContact;
-    newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Entity"
-                                               inManagedObjectContext:context];
-    [newContact setValue:modal.drugName forKey:@"drugName"];
-    [newContact setValue:[modal.drugImage getData] forKey:@"drugImage"];
-    [context save:&error];
+    int flag=1;
+    for(int i=0;  i <  checkMedicationList.count; i++)
+    {
+        if([[[checkMedicationList objectAtIndex:i] valueForKey:@"drugName"] isEqualToString:modal.drugName])
+        {
+            flag=0;
+            break;
+        }
+    }
+    if(flag==1)
+        return YES;
+    else
+        return NO;
 }
 
 - (NSManagedObjectContext *) managedObjectContext {

@@ -1,4 +1,4 @@
-//
+    //
 //  DEConfirmationViewController.m
 //  DenovoEyeApp
 //
@@ -23,7 +23,6 @@
 }
 - (IBAction)confirm:(id)sender {
     [self saveMyMedication];
-    [self.delegate popToMedication];
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
 - (IBAction)cancel:(id)sender {

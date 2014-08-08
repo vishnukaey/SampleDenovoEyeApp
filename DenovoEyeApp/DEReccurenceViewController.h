@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DEReccurenceViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIPickerView *recurrencePicker;
+@property (weak, nonatomic) IBOutlet UILabel *recurrenceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *frequencyLabel;
+@property (assign, nonatomic ) ParseMedicationDBModal *medication;
 @end

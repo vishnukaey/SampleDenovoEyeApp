@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */; };
 		220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */; };
-		220EAC9A1993931200E8FCC6 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC991993931200E8FCC6 /* Entity.m */; };
 		220EAC9D1993948600E8FCC6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EAC9C1993948600E8FCC6 /* CoreData.framework */; };
 		2214634A1990A8A00084FDCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221463491990A8A00084FDCB /* Foundation.framework */; };
 		2214634C1990A8A00084FDCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2214634B1990A8A00084FDCB /* CoreGraphics.framework */; };
@@ -33,6 +32,7 @@
 		222D020B1990FE7D005833A8 /* list-star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 222D020A1990FE7D005833A8 /* list-star-7.png */; };
 		222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D020D1991125E005833A8 /* DEMenuListItem.m */; };
 		22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22323D481992568A003B6966 /* DEConfirmViewController.m */; };
+		227AE9301994D3AB00A9341F /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 227AE92F1994D3AB00A9341F /* Entity.m */; };
 		22D365931993ABA500BC11AF /* DEMedicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365921993ABA500BC11AF /* DEMedicationCell.m */; };
 		22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365981993B8D000BC11AF /* DEReccurenceViewController.m */; };
 		22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3659B1993B8E000BC11AF /* DEReminderViewController.m */; };
@@ -70,8 +70,6 @@
 		220EAC9219938EBC00E8FCC6 /* DEDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEDataHandler.h; sourceTree = "<group>"; };
 		220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEDataHandler.m; sourceTree = "<group>"; };
 		220EAC9619938EFA00E8FCC6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		220EAC981993931200E8FCC6 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		220EAC991993931200E8FCC6 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		220EAC9C1993948600E8FCC6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		221463461990A8A00084FDCB /* DenovoEyeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DenovoEyeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		221463491990A8A00084FDCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +104,8 @@
 		222D020D1991125E005833A8 /* DEMenuListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMenuListItem.m; sourceTree = "<group>"; };
 		22323D471992568A003B6966 /* DEConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmViewController.h; sourceTree = "<group>"; };
 		22323D481992568A003B6966 /* DEConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmViewController.m; sourceTree = "<group>"; };
+		227AE92E1994D3AB00A9341F /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		227AE92F1994D3AB00A9341F /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		22D365911993ABA500BC11AF /* DEMedicationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationCell.h; sourceTree = "<group>"; };
 		22D365921993ABA500BC11AF /* DEMedicationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMedicationCell.m; sourceTree = "<group>"; };
 		22D365971993B8D000BC11AF /* DEReccurenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEReccurenceViewController.h; sourceTree = "<group>"; };
@@ -180,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */,
-				220EAC981993931200E8FCC6 /* Entity.h */,
-				220EAC991993931200E8FCC6 /* Entity.m */,
+				227AE92E1994D3AB00A9341F /* Entity.h */,
+				227AE92F1994D3AB00A9341F /* Entity.m */,
 			);
 			name = Coredata;
 			sourceTree = "<group>";
@@ -189,6 +189,7 @@
 		2214633D1990A8A00084FDCB = {
 			isa = PBXGroup;
 			children = (
+				2214635B1990A8A00084FDCB /* Main.storyboard */,
 				2214634F1990A8A00084FDCB /* DenovoEyeApp */,
 				221463501990A8A00084FDCB /* Supporting Files */,
 				221463481990A8A00084FDCB /* Frameworks */,
@@ -235,7 +236,6 @@
 		2214634F1990A8A00084FDCB /* DenovoEyeApp */ = {
 			isa = PBXGroup;
 			children = (
-				2214635B1990A8A00084FDCB /* Main.storyboard */,
 				221463581990A8A00084FDCB /* DEAppDelegate.h */,
 				221463591990A8A00084FDCB /* DEAppDelegate.m */,
 				22EAD934199238780017508F /* ViewControllers */,
@@ -505,13 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220EAC9A1993931200E8FCC6 /* Entity.m in Sources */,
 				22D3659F1993B8F300BC11AF /* DEAppoinmentViewController.m in Sources */,
 				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
 				222D02091990F29D005833A8 /* Utilities.m in Sources */,
 				22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */,
 				222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */,
 				22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */,
+				227AE9301994D3AB00A9341F /* Entity.m in Sources */,
 				221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */,
 				2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */,
 				22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */,
@@ -559,6 +559,7 @@
 				2214635C1990A8A00084FDCB /* Base */,
 			);
 			name = Main.storyboard;
+			path = DenovoEyeApp;
 			sourceTree = "<group>";
 		};
 		221463711990A8A00084FDCB /* InfoPlist.strings */ = {
@@ -653,7 +654,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/QBAdmin/Documents/MyProjects/DenovoEyeApp,
-					"/Users/QBAdmin/Downloads/FacebookSDK\\ copy\\ 2",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DenovoEyeApp/DenovoEyeApp-Prefix.pch";
@@ -672,7 +672,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/QBAdmin/Documents/MyProjects/DenovoEyeApp,
-					"/Users/QBAdmin/Downloads/FacebookSDK\\ copy\\ 2",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DenovoEyeApp/DenovoEyeApp-Prefix.pch";
