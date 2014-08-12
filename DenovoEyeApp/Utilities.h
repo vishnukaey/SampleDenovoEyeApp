@@ -11,5 +11,4 @@
 @interface Utilities : NSObject
 
 + (void) showAlert:(NSString *)message withTitle:(NSString *)title;
-
 @end

@@ -10,4 +10,8 @@
 
 @interface DEAppoinmentViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *appointmentTableView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *skipToConfirm;
+@property (assign, nonatomic ) ParseMedicationDBModal *medication;
+
 @end

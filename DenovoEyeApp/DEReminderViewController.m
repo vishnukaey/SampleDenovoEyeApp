@@ -6,10 +6,13 @@
 //  Copyright (c) 2014 Vishnu. All rights reserved.
 
 #import "DEReminderViewController.h"
+#import "DEAppoinmentViewController.h"
+#import "DEAppointmentTableCell.h"
 
 @interface DEReminderViewController (){
     NSMutableArray *hour,*minutes,*meridian;
-    UIPickerView *myPickerView ;
+    UIDatePicker *timePicker;
+    UITextField *activeField;
 }
 
 @end
@@ -28,62 +31,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@",self.medication);
-    myPickerView=[[UIPickerView alloc] initWithFrame:CGRectMake(0, 300, 320, 200)];
-    myPickerView.delegate = self;
-    myPickerView.showsSelectionIndicator = YES;
-    myPickerView.backgroundColor=[UIColor lightGrayColor];
-    [self setDataSource];
-    UIToolbar *toolBar= [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,320,44)];
-    [toolBar setBarStyle:UIBarStyleBlackOpaque];
-    UIBarButtonItem *barButtonDone = [[UIBarButtonItem alloc] initWithTitle:@"Done"
-                                                                      style:UIBarButtonItemStyleBordered target:self action:@selector(finishedSettingDate:)];
-    toolBar.items = [[NSArray alloc] initWithObjects:barButtonDone,nil];
-    barButtonDone.tintColor=[UIColor blackColor];
-    [myPickerView addSubview:toolBar];
+    self.medication.reminder=[[NSMutableArray alloc] init];
+    timePicker = [[UIDatePicker alloc]init];
+    timePicker.datePickerMode=UIDatePickerModeTime;
+    [timePicker addTarget:self
+                   action:@selector(timePickerValueChanged:)
+         forControlEvents:UIControlEventValueChanged];
+    for(int i=0 ; i < [self.medication.frequency intValue];i++){
+        [self.medication.reminder addObject:@""];
+    }
 }
 
--(void) finishedSettingDate:(id) sender{
-    [myPickerView resignFirstResponder];
-}
-
--(void) setDataSource{
-    hour=[[NSMutableArray alloc]init];
-    minutes=[[NSMutableArray alloc]init];
-    meridian=[[NSMutableArray alloc]initWithObjects:@"AM",@"PM",Nil];
-    for(int i = 0;i< 12 ; i++)
-        [hour setObject:[NSString stringWithFormat:@"%d",i] atIndexedSubscript:i];
-    for(int i = 0;i< 60 ; i++)
-        [minutes setObject:[NSString stringWithFormat:@"%d",i] atIndexedSubscript:i];
-}
-
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component {
-}
-
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if(component == 0)
-        return 12;
-    else if(component == 1)
-        return 60;
-    else
-        return 2;
-}
-
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 3;
-}
-
-
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    if(component == 0)
-        return [hour objectAtIndex:row];
-    else if(component == 1)
-        return [minutes objectAtIndex:row];
-    else
-        return [meridian objectAtIndex:row];
+- (IBAction)next:(id)sender {
+    [self performSegueWithIdentifier:@"appoinment" sender:self];
+    NSLog(@"%@",self.medication.reminder);
 }
 
 
@@ -91,6 +52,7 @@
 {
     return 2;
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if(section == 0)
@@ -103,19 +65,29 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"reminder";
-    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if(indexPath.section == 0){
+        static NSString *CellIdentifier = @"reminder";
+        UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         cell.textLabel.text=[NSString stringWithFormat:@"%@x %@",self.medication.frequency,self.medication.reccurence];
         cell.textLabel.textColor=[UIColor lightGrayColor];
         cell.textLabel.font=[cell.textLabel.font fontWithSize:25];
+        return cell;
     }
+    
     else{
-        cell.textLabel.textColor=[UIColor colorWithRed:29.0f/255.0f green:152.0f/255.0f blue:167.0f/255.0f alpha:1.0f];
-        cell.textLabel.text=@"09:45 AM";
-        cell.textLabel.font=[cell.textLabel.font fontWithSize:25];
+        static NSString *CellIdentifier = @"reminder1";
+        DEAppointmentTableCell *cell =(DEAppointmentTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        cell.textField.font=[cell.textField.font fontWithSize:25];
+        cell.textField.tintColor=[UIColor colorWithRed:29 green:152 blue:167 alpha:1];
+        cell.textField.tag=indexPath.row;
+        
+        cell.textField.inputView=timePicker;
+        return cell;
     }
-return cell;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    activeField=textField;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -126,20 +98,34 @@ return cell;
     return @"undefined";
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [myPickerView becomeFirstResponder];
-    [self.view addSubview:myPickerView];
-    
+-(NSString *)getTimeStringFromDate :(NSDate *)date {
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"hh:mm a"];
+    NSString *timeString = [dateFormatter stringFromDate:date];
+    return timeString;
 }
 
--(void)tableView:(UITableView*) tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath{
-    [myPickerView removeFromSuperview];
+
+-(void) timePickerValueChanged:(id) sender{
+    NSDate *date= timePicker.date;
+    activeField.text=[self getTimeStringFromDate:date];
+    [self.medication.reminder setObject:activeField.text atIndexedSubscript:activeField.tag];
 }
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"appoinment"]){
+        DEAppoinmentViewController *appointment=[segue destinationViewController];
+        appointment.medication=self.medication;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+
 @end
+

@@ -2,7 +2,7 @@
 //  Entity.m
 //  DenovoEyeApp
 //
-//  Created by Vishnu on 08/08/14.
+//  Created by Vishnu on 12/08/14.
 //  Copyright (c) 2014 Vishnu. All rights reserved.
 //
 
@@ -11,9 +11,11 @@
 
 @implementation Entity
 
+@dynamic appointment;
 @dynamic drugImage;
 @dynamic drugName;
 @dynamic frequency;
 @dynamic reccurence;
+@dynamic reminder;
 
 @end

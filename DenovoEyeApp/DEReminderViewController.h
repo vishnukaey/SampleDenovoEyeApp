@@ -10,5 +10,6 @@
 
 @interface DEReminderViewController : UIViewController<UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *reminderView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextToAppoinments;
 @property (assign, nonatomic ) ParseMedicationDBModal *medication;
 @end

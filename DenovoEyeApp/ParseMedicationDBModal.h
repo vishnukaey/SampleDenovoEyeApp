@@ -17,4 +17,6 @@
 @property (weak,nonatomic) NSString *expiryDate;
 @property (weak,nonatomic) NSString *frequency;
 @property (weak,nonatomic) NSString *reccurence;
+@property (strong,nonatomic) NSMutableArray *reminder;
+@property (strong,nonatomic) NSMutableArray *appointment;
 @end

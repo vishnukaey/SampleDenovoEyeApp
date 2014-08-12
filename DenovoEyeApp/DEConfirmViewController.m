@@ -22,7 +22,6 @@
     return self;
 }
 - (IBAction)confirm:(id)sender {
-    [self saveMyMedication];
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
 - (IBAction)cancel:(id)sender {
@@ -38,10 +37,6 @@
      ];
 }
 
--(void) saveMyMedication{
-    DEDataHandler *handler=[[DEDataHandler alloc] init];
-    [handler saveMyMedication:self.medication];
-}
 
 - (void)didReceiveMemoryWarning
 {

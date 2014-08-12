@@ -28,7 +28,7 @@
     NSArray *array=[[NSArray alloc]init];
     NSManagedObjectContext *moc = [self managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
-                                              entityForName:@"Entity" inManagedObjectContext:moc];
+                                              entityForName:@"Entity2" inManagedObjectContext:moc];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     NSError *error;
@@ -47,13 +47,12 @@
 
 -(void) saveMyMedication:(id)medication{
     if([self notAnExistingMedication:medication]){
-        NSManagedObjectContext *context =
-        [self managedObjectContext];
+        NSManagedObjectContext *context = [self managedObjectContext];
         NSError *error;
         ParseMedicationDBModal *modal=[[ParseMedicationDBModal alloc]init];
         modal=medication;
         NSManagedObject *newContact;
-        newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Entity"
+        newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Entity2"
                                                inManagedObjectContext:context];
         [newContact setValue:modal.drugName forKey:@"drugName"];
         [newContact setValue:[modal.drugImage getData] forKey:@"drugImage"];

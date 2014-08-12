@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DEConfirmationViewController : UIViewController
-
+@property (assign, nonatomic ) ParseMedicationDBModal *medication;
+@property (weak, nonatomic) IBOutlet UIImageView *drugImage;
 @end
