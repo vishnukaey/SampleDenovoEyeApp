@@ -39,6 +39,11 @@
             if(!(entity.drugImage == nil) && !(entity.drugName == nil)){
                 [dict setObject:entity.drugName forKey:@"drugName"];
                 [dict setObject:entity.drugImage forKey:@"drugImage"];
+                [dict setObject:entity.reccurence forKey:@"reccurence"];
+                [dict setObject:entity.frequency forKey:@"frequency"];
+                [dict setObject:entity.reminder forKey:@"reminder"];
+                if(entity.appointment != Nil)
+                [dict setObject:entity.appointment forKey:@"appointment"];
                 [mutableArray addObject:dict];
             }
     }
@@ -56,6 +61,10 @@
                                                inManagedObjectContext:context];
         [newContact setValue:modal.drugName forKey:@"drugName"];
         [newContact setValue:[modal.drugImage getData] forKey:@"drugImage"];
+        [newContact setValue:modal.reminder forKey:@"reminder"];
+        [newContact setValue:modal.frequency forKey:@"frequency"];
+        [newContact setValue:modal.reccurence forKey:@"reccurence"];
+        [newContact setValue:modal.appointment forKey:@"appointment"];
         [context save:&error];
     }
 }

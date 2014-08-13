@@ -17,22 +17,22 @@
 
 @implementation DEConfirmationViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     }
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    sectionHeaders =[[NSMutableArray alloc] initWithObjects:@"MEDICATION",@"FREQUENCY",@"REMINDERS AT",nil];
     medicalDetails=[[NSMutableArray alloc] init];
+    NSMutableString *reminders=[[NSMutableString alloc] init];
+    sectionHeaders =[[NSMutableArray alloc] initWithObjects:@"MEDICATION",@"FREQUENCY",@"REMINDERS AT",nil];
     [medicalDetails addObject:self.medication.drugName];
     [medicalDetails addObject:[NSString stringWithFormat:@"%@x %@",self.medication.frequency,self.medication.reccurence]];
-    NSMutableString *reminders=[[NSMutableString alloc] init];
     for(int i=0 ; i< self.medication.reminder.count;i++)
     {
         [reminders appendFormat:@"%@, ",[self.medication.reminder objectAtIndex:i]];
@@ -40,10 +40,19 @@
     [medicalDetails addObject:reminders];
     [self.medication.drugImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         self.drugImage.image=[UIImage imageWithData:data];
-    }
-     ];
+    }];
 }
 
+- (IBAction)Save:(id)sender {
+    if(self.medication){
+        DEDataHandler *handler=[[DEDataHandler alloc] init];
+        [handler saveMyMedication:self.medication];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+}
+
+
+#pragma  -mark TableView Delagate and Datasource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
@@ -58,14 +67,6 @@
     cell.dataLabel.numberOfLines = 0;
     [cell.dataLabel sizeToFit];
     return cell;
-}
-
-- (IBAction)Save:(id)sender {
-    if(self.medication){
-        DEDataHandler *handler=[[DEDataHandler alloc] init];
-        [handler saveMyMedication:self.medication];
-        [self.navigationController popToRootViewControllerAnimated:YES];
-    }
 }
 
 

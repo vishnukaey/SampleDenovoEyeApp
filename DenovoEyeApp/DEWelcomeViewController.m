@@ -22,6 +22,8 @@
     }
     return self;
 }
+
+
 - (IBAction)skip:(id)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if(![defaults boolForKey:@"loginStatus"]){
@@ -31,6 +33,8 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
+
+
 - (IBAction)login:(id)sender {
         [self performSegueWithIdentifier:@"loginScreen" sender:self];
 }
@@ -51,6 +55,7 @@
         self.login.enabled=NO;
     }
 }
+
 
 
 - (void)didReceiveMemoryWarning

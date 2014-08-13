@@ -17,5 +17,4 @@
 @dynamic frequency;
 @dynamic reccurence;
 @dynamic reminder;
-
 @end

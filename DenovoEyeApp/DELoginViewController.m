@@ -31,6 +31,8 @@
                                     return @(![username isEqualToString:@""] && ![password isEqualToString:@""]);
                                 }];
 }
+
+
 - (IBAction)login:(id)sender {
     if([self.username.text isEqualToString:@"user"] && [self.password.text isEqualToString:@"password"]){
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -42,6 +44,8 @@
         [Utilities showAlert:@"Wrong Credentials" withTitle:@"Failure"];
     }
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

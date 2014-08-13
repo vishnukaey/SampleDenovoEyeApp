@@ -20,13 +20,26 @@
 @implementation DEMedicationViewController
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     }
     return self;
 }
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
+
+
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.search becomeFirstResponder];
+}
+
+
 - (IBAction)go:(id)sender {
     self.search.enabled=NO;
     [self.search resignFirstResponder];
@@ -39,7 +52,7 @@
             [mod.drugImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
                 drugImage=[UIImage imageWithData:data];
                 [self performSegueWithIdentifier:@"confirm" sender:self];
-            }
+                }
              ];
         }
         else{
@@ -48,10 +61,14 @@
         self.search.enabled=YES;
     }];
 }
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+
+
+
+- (IBAction)pushToReccurenceController:(id)sender {
+    [self performSegueWithIdentifier:@"reccurence" sender:self];
 }
+
+
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"confirm"]){
@@ -61,28 +78,20 @@
     if([segue.identifier isEqualToString:@"reccurence"]){
         DEReccurenceViewController *reccur=[segue destinationViewController];
         reccur.medication=mod;
-
+        
         
     }
 }
 
--(void) viewDidAppear:(BOOL)animated{
-    [self.search becomeFirstResponder];
-}
-- (IBAction)pushToReccurenceController:(id)sender {
-    [self performSegueWithIdentifier:@"reccurence" sender:self];
-}
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self go:self];
     return YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

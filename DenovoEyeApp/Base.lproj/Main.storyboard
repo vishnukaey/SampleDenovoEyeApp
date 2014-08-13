@@ -853,6 +853,7 @@ U3RheSBvbiB0b3Agb2YgeW91ciBtZWRpY2F0aW9uA
     </scenes>
     <resources>
         <image name="Welcome.jpg" width="320" height="382"/>
+        <image name="Welcome.jpg" width="320" height="382"/>
         <image name="list-star-7.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -18,40 +18,22 @@
 
 @implementation DEReccurenceViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad{
     [super viewDidLoad];
     frequency = [[NSMutableArray alloc]init];
-    for (int i=0;i<10;i++){
+    for (int i=0;i<10;i++)
         [frequency  setObject:@(i+1) atIndexedSubscript:i];
-    }
     reccur=[[NSArray alloc]initWithObjects:@"Daily",@"Weekly",@"Monthly",nil];
-    
 }
 
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    //One column
-    return 2;
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    //set number of rows
-    if(component == 0)
-        return [frequency count];
-    else
-        return [reccur count];
-}
 
 - (IBAction)nextViewController:(id)sender {
     self.medication.frequency=self.frequencyLabel.text;
@@ -59,8 +41,38 @@
     [self performSegueWithIdentifier:@"reminder" sender:self];
 }
 
+
 - (IBAction)setCustomFrequency:(id)sender {
     NSLog(@"Set Custom frequency");
+}
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"reminder"]){
+        DEReminderViewController *remind=[segue destinationViewController];
+        remind.medication=self.medication;
+    }
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    
+}
+
+
+#pragma -mark PickerView delegates
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 2;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    if(component == 0)
+        return [frequency count];
+    else
+        return [reccur count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
@@ -71,6 +83,7 @@
         return [reccur objectAtIndex:row];
 }
 
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {   
     if(component == 0)
@@ -79,17 +92,5 @@
         self.recurrenceLabel.text=[reccur objectAtIndex:row];
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"reminder"]){
-        DEReminderViewController *remind=[segue destinationViewController];
-        remind.medication=self.medication;
-    }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-
-}
 
 @end

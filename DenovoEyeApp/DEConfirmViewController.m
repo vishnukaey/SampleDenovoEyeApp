@@ -21,20 +21,24 @@
     }
     return self;
 }
+
+
 - (IBAction)confirm:(id)sender {
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
+
+
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self.medication.drugImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         self.drugImage.image=[UIImage imageWithData:data];
-    }
-     ];
+    }];
 }
 
 

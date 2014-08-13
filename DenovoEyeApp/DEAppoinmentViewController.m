@@ -20,8 +20,7 @@
 
 @implementation DEAppoinmentViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -30,24 +29,29 @@
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     appoinmentArray=[[NSMutableArray alloc]initWithObjects:@"Provider or Doctor",@"Date of Appointment",@"Time of Appointment", nil];
     [self createADateAPicker];
     self.medication.appointment=[[NSMutableArray alloc]init];
 }
 
+- (IBAction)skipToConfirm:(id)sender {
+    NSLog(@"Appoinment: %@",self.medication.appointment);
+    [self performSegueWithIdentifier:@"confirm" sender:self];
+}
 
+
+#pragma -mark Picker Datasource and Delegates
 -(void) createADateAPicker{
     datePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
     timePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
     [datePicker addTarget:self
-               action:@selector(datePickerValueChanged:)
-     forControlEvents:UIControlEventValueChanged];
+                action:@selector(datePickerValueChanged:)
+                forControlEvents:UIControlEventValueChanged];
     [timePicker addTarget:self
-                   action:@selector(timePickerValueChanged:)
-         forControlEvents:UIControlEventValueChanged];
+                action:@selector(timePickerValueChanged:)
+                forControlEvents:UIControlEventValueChanged];
 }
 
 
@@ -80,11 +84,8 @@
     [self.medication.appointment setObject:activeField.text atIndexedSubscript:activeField.tag];
 }
 
-- (IBAction)skipToConfirm:(id)sender {
-    NSLog(@"Appoinment: %@",self.medication.appointment);
-    [self performSegueWithIdentifier:@"confirm" sender:self];
-}
 
+#pragma -mark TableView Delegates
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
@@ -112,14 +113,19 @@
 }
 
 
+
+#pragma -mark TextField Delegates
+
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     activeField=textField;
 }
+
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     if(activeField.tag==0)
     [self.medication.appointment setObject:activeField.text atIndexedSubscript:activeField.tag];
 }
+
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"confirm"]){
@@ -129,9 +135,9 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
+
 
 @end
