@@ -18,4 +18,5 @@
     #import <CoreData/CoreData.h>
     #import "DEDataHandler.h"
     #import "Entity.h"
+    #import "DEParsePhysicianModel.h"
 #endif

@@ -57,6 +57,10 @@
 		22EAD92B199230360017508F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD92A199230360017508F /* Accounts.framework */; };
 		22EAD92F1992309A0017508F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD92E1992309A0017508F /* FacebookSDK.framework */; };
 		22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAD931199235390017508F /* ParseMedicationDBModal.m */; };
+		22ECAE2F199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE2E199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m */; };
+		22ECAE35199B80BB00A66A4E /* DEPhysicianLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE34199B80BB00A66A4E /* DEPhysicianLogViewController.m */; };
+		22ECAE3B199B857800A66A4E /* DEPhysicianTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */; };
+		22ECAE3E199B8B4200A66A4E /* DEParsePhysicianModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE3D199B8B4200A66A4E /* DEParsePhysicianModel.m */; };
 		22F95F571998BC2E00034A59 /* close-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F95F561998BC2E00034A59 /* close-50.png */; };
 		FF9970E479A0471A958A14D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AFBF898F34404AB658F1E5 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -144,6 +148,14 @@
 		22EAD92E1992309A0017508F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		22EAD930199235390017508F /* ParseMedicationDBModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseMedicationDBModal.h; sourceTree = "<group>"; };
 		22EAD931199235390017508F /* ParseMedicationDBModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseMedicationDBModal.m; sourceTree = "<group>"; };
+		22ECAE2D199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEAppointmentsAppointmentViewController.h; sourceTree = "<group>"; };
+		22ECAE2E199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAppointmentsAppointmentViewController.m; sourceTree = "<group>"; };
+		22ECAE33199B80BB00A66A4E /* DEPhysicianLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEPhysicianLogViewController.h; sourceTree = "<group>"; };
+		22ECAE34199B80BB00A66A4E /* DEPhysicianLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEPhysicianLogViewController.m; sourceTree = "<group>"; };
+		22ECAE39199B857800A66A4E /* DEPhysicianTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEPhysicianTableCell.h; sourceTree = "<group>"; };
+		22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEPhysicianTableCell.m; sourceTree = "<group>"; };
+		22ECAE3C199B8B4200A66A4E /* DEParsePhysicianModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEParsePhysicianModel.h; sourceTree = "<group>"; };
+		22ECAE3D199B8B4200A66A4E /* DEParsePhysicianModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEParsePhysicianModel.m; sourceTree = "<group>"; };
 		22F95F561998BC2E00034A59 /* close-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-50.png"; sourceTree = "<group>"; };
 		7D6ADED3221B4224998764B0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F5AFBF898F34404AB658F1E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +324,7 @@
 			children = (
 				22EAD937199238C70017508F /* LoginViewControllers */,
 				22EAD936199238AC0017508F /* MedicationViewController */,
+				22ECAE2C199B5C2800A66A4E /* AppointmentVIewControllers */,
 				22EAD935199238920017508F /* DashBoardViewController */,
 			);
 			name = ViewControllers;
@@ -367,6 +380,8 @@
 				22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */,
 				22E5292E199A1B3600E62BC5 /* DEConfirmViewCell.h */,
 				22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */,
+				22ECAE39199B857800A66A4E /* DEPhysicianTableCell.h */,
+				22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -378,6 +393,8 @@
 				22EAD931199235390017508F /* ParseMedicationDBModal.m */,
 				220EAC9219938EBC00E8FCC6 /* DEDataHandler.h */,
 				220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */,
+				22ECAE3C199B8B4200A66A4E /* DEParsePhysicianModel.h */,
+				22ECAE3D199B8B4200A66A4E /* DEParsePhysicianModel.m */,
 			);
 			name = ModalClasses;
 			sourceTree = "<group>";
@@ -389,6 +406,17 @@
 				222D02081990F29D005833A8 /* Utilities.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		22ECAE2C199B5C2800A66A4E /* AppointmentVIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22ECAE2D199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.h */,
+				22ECAE2E199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m */,
+				22ECAE33199B80BB00A66A4E /* DEPhysicianLogViewController.h */,
+				22ECAE34199B80BB00A66A4E /* DEPhysicianLogViewController.m */,
+			);
+			name = AppointmentVIewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,8 +557,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2240EBF0199A58F800275BC3 /* Entity.m in Sources */,
+				22ECAE3B199B857800A66A4E /* DEPhysicianTableCell.m in Sources */,
 				22D3659F1993B8F300BC11AF /* DEAppoinmentViewController.m in Sources */,
 				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
+				22ECAE35199B80BB00A66A4E /* DEPhysicianLogViewController.m in Sources */,
 				22E52930199A1B3600E62BC5 /* DEConfirmViewCell.m in Sources */,
 				222D02091990F29D005833A8 /* Utilities.m in Sources */,
 				22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */,
@@ -539,6 +569,7 @@
 				221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */,
 				2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */,
 				22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */,
+				22ECAE3E199B8B4200A66A4E /* DEParsePhysicianModel.m in Sources */,
 				22D365931993ABA500BC11AF /* DEMedicationCell.m in Sources */,
 				220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */,
 				22D763811999DB35000BC1D1 /* DEAppointmentTableCell.m in Sources */,
@@ -547,6 +578,7 @@
 				2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */,
 				22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */,
 				22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */,
+				22ECAE2F199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m in Sources */,
 				220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */,
 				221463831990A96C0084FDCB /* DELoginViewController.m in Sources */,
 			);

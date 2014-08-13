@@ -40,6 +40,7 @@
     [timePicker addTarget:self
                 action:@selector(timePickerValueChanged:)
                 forControlEvents:UIControlEventValueChanged];
+    timePicker.backgroundColor=[UIColor groupTableViewBackgroundColor];
     
     for(int i=0 ; i < [self.medication.frequency intValue];i++){
         [self.medication.reminder addObject:@""];

@@ -46,6 +46,8 @@
 -(void) createADateAPicker{
     datePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
     timePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
+     timePicker.backgroundColor=[UIColor groupTableViewBackgroundColor];
+     datePicker.backgroundColor=[UIColor groupTableViewBackgroundColor];
     [datePicker addTarget:self
                 action:@selector(datePickerValueChanged:)
                 forControlEvents:UIControlEventValueChanged];

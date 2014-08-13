@@ -14,6 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [ParseMedicationDBModal registerSubclass];
+    [DEParsePhysicianModel registerSubclass];
     [Parse setApplicationId:@"VcBICl4IP5RrXIU2iDWcKa0OoXBogw41yKSUg0vU"
                     clientKey:@"ClA0kFnr17ucrjeLEVaTEBxW4Med7FSunkgzzEwY"];
     return YES;
