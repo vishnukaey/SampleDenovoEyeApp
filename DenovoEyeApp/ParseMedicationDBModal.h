@@ -15,8 +15,9 @@
 @property (weak, nonatomic) NSString *drugName;
 @property (weak,nonatomic) PFFile *drugImage;
 @property (weak,nonatomic) NSString *expiryDate;
-@property (weak,nonatomic) NSString *frequency;
-@property (weak,nonatomic) NSString *reccurence;
-@property (strong,nonatomic) NSMutableArray *reminder;
-@property (strong,nonatomic) NSMutableArray *appointment;
+@property (strong,nonatomic) NSString *frequency;
+@property (strong,nonatomic) NSString *reccurence;
+@property (weak,nonatomic) NSData *drugImageData;
+@property (nonatomic, retain) id reminder;
+
 @end

@@ -33,20 +33,20 @@
     sectionHeaders =[[NSMutableArray alloc] initWithObjects:@"MEDICATION",@"FREQUENCY",@"REMINDERS AT",nil];
     [medicalDetails addObject:self.medication.drugName];
     [medicalDetails addObject:[NSString stringWithFormat:@"%@x %@",self.medication.frequency,self.medication.reccurence]];
-    for(int i=0 ; i< self.medication.reminder.count;i++)
+    for(NSString *reminder in self.medication.reminder)
     {
-        [reminders appendFormat:@"%@, ",[self.medication.reminder objectAtIndex:i]];
+        [reminders appendFormat:@"%@, ",reminder];
     }
     [medicalDetails addObject:reminders];
-    [self.medication.drugImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-        self.drugImage.image=[UIImage imageWithData:data];
-    }];
+    self.drugImage.image=[UIImage imageWithData:self.medication.drugImageData];
+
 }
 
 - (IBAction)Save:(id)sender {
     if(self.medication){
         DEDataHandler *handler=[[DEDataHandler alloc] init];
         [handler saveMyMedication:self.medication];
+        [Utilities showAlert:@"Successfully added" withTitle:@"Success"];
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }

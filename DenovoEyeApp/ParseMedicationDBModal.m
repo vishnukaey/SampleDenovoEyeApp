@@ -10,13 +10,14 @@
 
 @implementation ParseMedicationDBModal
 
+@dynamic drugImageData;
 @dynamic drugImage;
 @dynamic drugName;
 @dynamic expiryDate;
 @dynamic frequency;
 @dynamic reccurence;
 @dynamic reminder;
-@dynamic appointment;
+
 
 + (NSString *) parseClassName{
     return @"Medication";

@@ -1,3 +1,6 @@
+
+
+
 //
 //  DEAppointmentsAppointmentViewController.m
 //  DenovoEyeApp
@@ -35,6 +38,9 @@
         physicians = [objects mutableCopy];
         [self.physicianTable reloadData];
     }];
+    DEDataHandler *handler =[[DEDataHandler alloc]init];
+    NSArray *hello= [handler getAllAppoinments];
+    NSLog(@"Appointments are %@",hello);
 }
 
 

@@ -17,4 +17,5 @@
 @property (weak,nonatomic) NSString *qualification;
 @property (weak,nonatomic) NSString *specialisation;
 @property (weak,nonatomic) NSString *address;
+
 @end

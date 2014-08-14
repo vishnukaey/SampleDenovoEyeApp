@@ -10,10 +10,20 @@
 
 
 @interface DEDataHandler : NSObject
+
     @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
     @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
     @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-    -(void) saveMyMedication:(id)medication;
-    -(NSArray*) getMedicationList;
+
     - (NSURL *)applicationDocumentsDirectory;
+
+    -(void) saveMyMedication:(id)medication;
+    -(void)saveAppointment:(NSDictionary*)appointment;
+
+    -(NSArray*) getMedicationList;
+    -(NSArray *) getAllAppoinments;
+
+    -(id) initialize;
+    -(id) insertToAppointments;
+
 @end

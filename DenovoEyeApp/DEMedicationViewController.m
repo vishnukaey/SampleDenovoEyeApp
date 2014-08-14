@@ -10,7 +10,7 @@
 #import "DEConfirmViewController.h"
 #import "DEReccurenceViewController.h"
 
-@interface DEMedicationViewController (){
+@interface DEMedicationViewController ()<DEConfirmViewControllerDelegate>{
     UIImage *drugImage;
     ParseMedicationDBModal *mod;
 }
@@ -40,6 +40,12 @@
 }
 
 
+-(void) pushToNextViewController{
+    [self
+    performSegueWithIdentifier:@"reccurence" sender:self];
+}
+
+
 - (IBAction)go:(id)sender {
     self.search.enabled=NO;
     [self.search resignFirstResponder];
@@ -51,6 +57,8 @@
             NSLog(@"%@",mod.drugName);
             [mod.drugImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
                 drugImage=[UIImage imageWithData:data];
+                mod.drugImageData=[mod.drugImage getData];
+                drugImage=[UIImage imageWithData:mod.drugImageData];
                 [self performSegueWithIdentifier:@"confirm" sender:self];
                 }
              ];
@@ -72,12 +80,15 @@
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"confirm"]){
+        
         DEConfirmViewController *confirm=[segue destinationViewController];
         confirm.medication=mod;
+        confirm.delegate=self;
     }
     if([segue.identifier isEqualToString:@"reccurence"]){
         DEReccurenceViewController *reccur=[segue destinationViewController];
-        reccur.medication=mod;
+        reccur.medication=mod
+        ;
         
         
     }

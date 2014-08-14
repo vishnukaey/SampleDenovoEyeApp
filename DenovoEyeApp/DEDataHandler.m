@@ -8,11 +8,14 @@
 
 #import "DEDataHandler.h"
 
-@implementation DEDataHandler
+@implementation DEDataHandler{
+    DEAppDelegate *appDelegate;
+}
 
-    @synthesize managedObjectContext = _managedObjectContext;
-    @synthesize managedObjectModel = _managedObjectModel;
-    @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
 
 -(id) init
 {
@@ -23,6 +26,24 @@
     }
     return self;
 }
+
+-(id) initialize{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    NSManagedObject *newContact;
+    newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Entity2"
+                                               inManagedObjectContext:moc];
+    return newContact;
+}
+
+-(id)insertToAppointments{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    NSManagedObject *newContact;
+    newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Appoinment"
+                                           inManagedObjectContext:moc];
+    return newContact;
+}
+
+
 
 -(NSArray*) getMedicationList{
     NSArray *array=[[NSArray alloc]init];
@@ -42,31 +63,64 @@
                 [dict setObject:entity.reccurence forKey:@"reccurence"];
                 [dict setObject:entity.frequency forKey:@"frequency"];
                 [dict setObject:entity.reminder forKey:@"reminder"];
-                if(entity.appointment != Nil)
-                [dict setObject:entity.appointment forKey:@"appointment"];
-                [mutableArray addObject:dict];
             }
+        [mutableArray addObject:dict];
     }
     return mutableArray;
 }
 
 -(void) saveMyMedication:(id)medication{
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSError *error;
+    ParseMedicationDBModal *modal=medication;
+    modal=medication;
     if([self notAnExistingMedication:medication]){
-        NSManagedObjectContext *context = [self managedObjectContext];
-        NSError *error;
-        ParseMedicationDBModal *modal=[[ParseMedicationDBModal alloc]init];
-        modal=medication;
+       
         NSManagedObject *newContact;
         newContact = [NSEntityDescription insertNewObjectForEntityForName:@"Entity2"
                                                inManagedObjectContext:context];
         [newContact setValue:modal.drugName forKey:@"drugName"];
-        [newContact setValue:[modal.drugImage getData] forKey:@"drugImage"];
+        [newContact setValue:modal.drugImageData forKey:@"drugImage"];
         [newContact setValue:modal.reminder forKey:@"reminder"];
         [newContact setValue:modal.frequency forKey:@"frequency"];
         [newContact setValue:modal.reccurence forKey:@"reccurence"];
-        [newContact setValue:modal.appointment forKey:@"appointment"];
-        [context save:&error];
+        }
+    [context save:&error];
+}
+
+-(NSArray*)getAllAppoinments{
+    NSArray *array=[[NSArray alloc]init];
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    NSEntityDescription *entityDescription = [NSEntityDescription
+                                              entityForName:@"Appoinment" inManagedObjectContext:moc];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    array=[moc executeFetchRequest:request error:&error];
+    NSMutableArray *mutableArray=[[NSMutableArray alloc]init];
+    for (Appoinment *appointment in array) {
+        if(appointment.provider){
+            NSMutableDictionary *dict=[[NSMutableDictionary alloc]init];
+            [dict setObject:appointment.provider forKey:@"provider"];
+            [dict setObject:appointment.date forKey:@"date"];
+            [dict setObject:appointment.time forKey:@"time"];
+            [mutableArray addObject:dict];
+        }
     }
+    return mutableArray;
+}
+
+-(void) saveAppointment:(NSDictionary*
+                         )appointment{
+        NSManagedObjectContext *context = [self managedObjectContext];
+        NSError *error;
+        NSManagedObject *newContact2;
+        newContact2 = [NSEntityDescription insertNewObjectForEntityForName:@"Appoinment"
+                                                    inManagedObjectContext:context];
+        [newContact2 setValue:[appointment valueForKey:@"provider"] forKey:@"provider"];
+        [newContact2 setValue:[appointment valueForKey:@"date"] forKey:@"date"];
+        [newContact2 setValue:[appointment valueForKey:@"time"] forKey:@"time"];
+        [context save:&error];
 }
 
 -(bool)notAnExistingMedication:(id)medication{
@@ -101,8 +155,6 @@
     return _managedObjectContext;
 }
 
-// Returns the managed object model for the application.
-// If the model doesn't already exist, it is created from the application's model.
 - (NSManagedObjectModel *)managedObjectModel {
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
@@ -112,19 +164,22 @@
     return _managedObjectModel;
 }
 
-// Returns the persistent store coordinator for the application.
-// If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;
     }
     NSURL *storeUrl =[[self applicationDocumentsDirectory]
                       URLByAppendingPathComponent: @"Entity.sqlite"];
+    NSURL *storeUrl2 =[[self applicationDocumentsDirectory]
+                       URLByAppendingPathComponent: @"Appoinment.sqlite"];
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
                                    initWithManagedObjectModel:[self managedObjectModel]];
     if(![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                   configuration:nil URL:storeUrl options:nil error:&error]) {
+    }
+    if(![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                  configuration:nil URL:storeUrl2 options:nil error:&error]) {
     }
     
     return _persistentStoreCoordinator;

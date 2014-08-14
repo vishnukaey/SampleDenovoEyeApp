@@ -14,6 +14,7 @@
     NSMutableArray *appoinmentArray;
     UIDatePicker *datePicker,*timePicker;
     UITextField *activeField;
+    NSMutableDictionary *appointmentDict;
 }
 
 @end
@@ -32,12 +33,13 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     appoinmentArray=[[NSMutableArray alloc]initWithObjects:@"Provider or Doctor",@"Date of Appointment",@"Time of Appointment", nil];
+    appointmentDict =[[ NSMutableDictionary alloc]init];
     [self createADateAPicker];
-    self.medication.appointment=[[NSMutableArray alloc]init];
 }
 
 - (IBAction)skipToConfirm:(id)sender {
-    NSLog(@"Appoinment: %@",self.medication.appointment);
+    DEDataHandler *handler=[[DEDataHandler alloc] init];
+    [handler saveAppointment:appointmentDict];
     [self performSegueWithIdentifier:@"confirm" sender:self];
 }
 
@@ -60,7 +62,7 @@
 -(void) datePickerValueChanged:(id) sender{
     NSDate *date= datePicker.date;
     activeField.text=[self getDateStringFromDate:date];
-    [self.medication.appointment setObject:activeField.text atIndexedSubscript:activeField.tag];
+    [appointmentDict setValue:activeField.text forKey:@"date"];
 }
 
 
@@ -83,7 +85,7 @@
 -(void) timePickerValueChanged:(id) sender{
     NSDate *date= timePicker.date;
     activeField.text=[self getTimeStringFromDate:date];
-    [self.medication.appointment setObject:activeField.text atIndexedSubscript:activeField.tag];
+    [appointmentDict setValue:activeField.text forKey:@"time"];
 }
 
 
@@ -108,7 +110,6 @@
         timePicker.datePickerMode=UIDatePickerModeTime;
         cell.textField.inputView=timePicker;
     }
-    [self.medication.appointment addObject:cell.textField.text];
     cell.textField.tag=indexPath.row;
    
     return cell;
@@ -125,7 +126,7 @@
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     if(activeField.tag==0)
-    [self.medication.appointment setObject:activeField.text atIndexedSubscript:activeField.tag];
+        [appointmentDict setValue:activeField.text forKey:@"provider"];
 }
 
 

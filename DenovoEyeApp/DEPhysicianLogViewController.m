@@ -7,6 +7,7 @@
 //
 
 #import "DEPhysicianLogViewController.h"
+#import "DEAppoinmentsAddNewViewController.h"
 
 @interface DEPhysicianLogViewController ()
 
@@ -30,6 +31,14 @@
     self.photo.clipsToBounds = YES;
 	self.photo.image=[UIImage imageWithData:[self.physician.photo getData]];
     self.physicianName.text=self.physician.name;
+}
+- (IBAction)makeNewAppoinment:(id)sender {
+    [self performSegueWithIdentifier:@"addNew" sender:self];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DEAppoinmentsAddNewViewController *add=[segue destinationViewController];
+    add.physician = self.physicianName.text;
 }
 
 - (void)didReceiveMemoryWarning

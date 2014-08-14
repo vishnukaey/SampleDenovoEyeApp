@@ -24,6 +24,7 @@
 
 
 - (IBAction)confirm:(id)sender {
+    [self.delegate pushToNextViewController];
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
@@ -36,9 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.medication.drugImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-        self.drugImage.image=[UIImage imageWithData:data];
-    }];
+        self.drugImage.image=[UIImage imageWithData:self.medication.drugImageData];
 }
 
 

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-ASValueTrackingSlider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3E8A7B32821E43F093B3813D</key>
+		<key>BE22055D282148C5871D7BA8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>76FA69770D4340C2988DC55C</key>
+		<key>BF8EEBA70E124809AB70B8FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4897F0E878249F2B0CE8501</key>
 		<dict>
 			<key>primary</key>
 			<true/>

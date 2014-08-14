@@ -19,4 +19,7 @@
     #import "DEDataHandler.h"
     #import "Entity.h"
     #import "DEParsePhysicianModel.h"
+    #import "Appoinment.h"
+    #import "DEAppDelegate.h"
+
 #endif

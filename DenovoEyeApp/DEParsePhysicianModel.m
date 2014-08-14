@@ -14,6 +14,7 @@
 @dynamic specialisation;
 @dynamic address;
 
+
 + (NSString *) parseClassName{
     return @"Physician";
 }
