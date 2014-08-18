@@ -24,7 +24,7 @@
 
 
 - (IBAction)confirm:(id)sender {
-    [self.delegate pushToNextViewController];
+    [self.delegate showCapColorView];
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
 

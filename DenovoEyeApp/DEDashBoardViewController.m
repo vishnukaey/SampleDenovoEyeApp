@@ -34,18 +34,18 @@
                @"MEDICATION",@"APPOINMENTS",@"OCULAR PRESSURE",@"REWARDS",@"TIMELINE",
                @"SETTINGS",@"HELP",@"TERMS & CONDITIONS", nil];
     [self performSegueWithIdentifier:@"welcome" sender:self];
-    [self addLocalNotification];
+//    [self addLocalNotification];
 }
 
 
 
--(void) addLocalNotification{
-    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
-    localNotification.alertBody = @"Your alert message";
-    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-}
+//-(void) addLocalNotification{
+//    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+//    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+//    localNotification.alertBody = @"Your alert message";
+//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+//}
 
 
 

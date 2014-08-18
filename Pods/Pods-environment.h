@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_LEColorPicker 0
 #define COCOAPODS_VERSION_PATCH_LEColorPicker 3
 
+// MSSimpleGauge
+#define COCOAPODS_POD_AVAILABLE_MSSimpleGauge
+#define COCOAPODS_VERSION_MAJOR_MSSimpleGauge 0
+#define COCOAPODS_VERSION_MINOR_MSSimpleGauge 5
+#define COCOAPODS_VERSION_PATCH_MSSimpleGauge 0
+
 // ReactiveCocoa
 #define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2

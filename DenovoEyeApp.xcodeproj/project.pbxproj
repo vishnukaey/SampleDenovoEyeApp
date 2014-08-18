@@ -40,6 +40,8 @@
 		22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365A11993B95900BC11AF /* DEConfirmationViewController.m */; };
 		22D763811999DB35000BC1D1 /* DEAppointmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */; };
 		22E52930199A1B3600E62BC5 /* DEConfirmViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */; };
+		22EAAA5519A20B6300117482 /* DEAllMedicationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAAA5419A20B6300117482 /* DEAllMedicationsViewController.m */; };
+		22EAAA5819A2423100117482 /* DEMedicationComplianceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAAA5719A2423100117482 /* DEMedicationComplianceCell.m */; };
 		22EAD908199210DD0017508F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD907199210DD0017508F /* AudioToolbox.framework */; };
 		22EAD90A199210E70017508F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD909199210E70017508F /* CFNetwork.framework */; };
 		22EAD90C199211020017508F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD90B199211020017508F /* CoreLocation.framework */; };
@@ -129,6 +131,10 @@
 		22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAppointmentTableCell.m; sourceTree = "<group>"; };
 		22E5292E199A1B3600E62BC5 /* DEConfirmViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmViewCell.h; sourceTree = "<group>"; };
 		22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmViewCell.m; sourceTree = "<group>"; };
+		22EAAA5319A20B6300117482 /* DEAllMedicationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEAllMedicationsViewController.h; sourceTree = "<group>"; };
+		22EAAA5419A20B6300117482 /* DEAllMedicationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAllMedicationsViewController.m; sourceTree = "<group>"; };
+		22EAAA5619A2423100117482 /* DEMedicationComplianceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationComplianceCell.h; sourceTree = "<group>"; };
+		22EAAA5719A2423100117482 /* DEMedicationComplianceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMedicationComplianceCell.m; sourceTree = "<group>"; };
 		22EAD907199210DD0017508F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		22EAD909199210E70017508F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		22EAD90B199211020017508F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -345,6 +351,8 @@
 		22EAD936199238AC0017508F /* MedicationViewController */ = {
 			isa = PBXGroup;
 			children = (
+				22EAAA5319A20B6300117482 /* DEAllMedicationsViewController.h */,
+				22EAAA5419A20B6300117482 /* DEAllMedicationsViewController.m */,
 				221463881990AF820084FDCB /* DEMedicationViewController.h */,
 				221463891990AF820084FDCB /* DEMedicationViewController.m */,
 				22323D471992568A003B6966 /* DEConfirmViewController.h */,
@@ -385,6 +393,8 @@
 				22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */,
 				22ECAE39199B857800A66A4E /* DEPhysicianTableCell.h */,
 				22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */,
+				22EAAA5619A2423100117482 /* DEMedicationComplianceCell.h */,
+				22EAAA5719A2423100117482 /* DEMedicationComplianceCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -561,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EAAA5519A20B6300117482 /* DEAllMedicationsViewController.m in Sources */,
 				22ECAE3B199B857800A66A4E /* DEPhysicianTableCell.m in Sources */,
 				22D3659F1993B8F300BC11AF /* DEAppoinmentViewController.m in Sources */,
 				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
@@ -584,6 +595,7 @@
 				2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */,
 				22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */,
 				22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */,
+				22EAAA5819A2423100117482 /* DEMedicationComplianceCell.m in Sources */,
 				22ECAE2F199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m in Sources */,
 				220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */,
 				221463831990A96C0084FDCB /* DELoginViewController.m in Sources */,

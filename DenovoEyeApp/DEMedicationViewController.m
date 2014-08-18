@@ -42,7 +42,7 @@
 }
 
 
--(void) pushToNextViewController{
+-(void) showCapColorView{
     self.capColorView.hidden=NO;
 }
 
@@ -78,7 +78,10 @@
 
 
 - (IBAction)pushToReccurenceController:(id)sender {
-    [self performSegueWithIdentifier:@"reccurence" sender:self];
+    if(mod)
+        [self performSegueWithIdentifier:@"reccurence" sender:self];
+    else
+        [Utilities showAlert:@"Please select a Medication" withTitle:@"Alert"];
 }
 
 
@@ -94,10 +97,7 @@
     }
     if([segue.identifier isEqualToString:@"reccurence"]){
         DEReccurenceViewController *reccur=[segue destinationViewController];
-        reccur.medication=mod
-        ;
-        
-        
+        reccur.medication = mod ;
     }
 }
 

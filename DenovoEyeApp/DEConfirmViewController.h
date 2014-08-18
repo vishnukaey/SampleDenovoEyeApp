@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DEDataHandler.h"
 @protocol DEConfirmViewControllerDelegate <NSObject>
--(void)pushToNextViewController;
+-(void)showCapColorView;
 @end
 
 @interface DEConfirmViewController : UIViewController
