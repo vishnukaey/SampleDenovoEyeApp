@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-LEColorPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BE22055D282148C5871D7BA8</key>
+		<key>0FE139E193A547DDA344F875</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF8EEBA70E124809AB70B8FC</key>
+		<key>5C53A8E08DA0442F997E8425</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4897F0E878249F2B0CE8501</key>
+		<key>ABD8CCA099F140279AE3F443</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E38709C3F7D44326A316E86E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

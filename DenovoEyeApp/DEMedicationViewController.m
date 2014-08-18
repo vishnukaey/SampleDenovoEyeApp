@@ -9,6 +9,7 @@
 #import "ParseMedicationDBModal.h"
 #import "DEConfirmViewController.h"
 #import "DEReccurenceViewController.h"
+#import "LEColorPicker.h"
 
 @interface DEMedicationViewController ()<DEConfirmViewControllerDelegate>{
     UIImage *drugImage;
@@ -31,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.capColorView.hidden=YES;
 }
 
 
@@ -41,8 +43,7 @@
 
 
 -(void) pushToNextViewController{
-    [self
-    performSegueWithIdentifier:@"reccurence" sender:self];
+    self.capColorView.hidden=NO;
 }
 
 
@@ -60,6 +61,10 @@
                 mod.drugImageData=[mod.drugImage getData];
                 drugImage=[UIImage imageWithData:mod.drugImageData];
                 [self performSegueWithIdentifier:@"confirm" sender:self];
+                LEColorPicker *colorPicker = [[LEColorPicker alloc] init];
+                LEColorScheme *colorScheme = [colorPicker colorSchemeFromImage:drugImage];
+                self.capColorView.backgroundColor = [colorScheme primaryTextColor];
+                self.confirmColorButton.tintColor=[colorScheme backgroundColor];
                 }
              ];
         }
@@ -77,6 +82,8 @@
 }
 
 
+- (IBAction)confirmColorButtonAction:(id)sender {
+}
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"confirm"]){

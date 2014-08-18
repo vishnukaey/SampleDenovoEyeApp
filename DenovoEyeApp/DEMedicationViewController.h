@@ -10,4 +10,6 @@
 
 @interface DEMedicationViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *search;
+@property (weak, nonatomic) IBOutlet UIView *capColorView;
+@property (weak, nonatomic) IBOutlet UIButton *confirmColorButton;
 @end
