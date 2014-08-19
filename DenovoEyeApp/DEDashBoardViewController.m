@@ -9,7 +9,8 @@
 #import "DEDashBoardViewController.h"
 #import "DEMenuListItem.h"
 #import "DELoginViewController.h"
-#import "DEMedicationCell.h"
+#import "DEMedicationComplianceCell.h"
+#import "DEOCPCell.h"
 
 @interface DEDashBoardViewController (){
     NSArray *menuItems;
@@ -96,11 +97,22 @@
 
 #pragma -mark TableView Delagate
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+     if(tableView == self.dashBoardTableView)
+         return 2;
+    else
+        return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if(tableView == self.dashBoardMenuTable)
         return menuItems.count;
-    else
-        return myMedicationList.count;
+    else{
+        if(section == 0)
+            return myMedicationList.count;
+        else
+            return 1;
+    }
 }
 
 
@@ -111,15 +123,61 @@
         DEMenuListItem *cell =(DEMenuListItem *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         cell.menuListItem.text=[menuItems objectAtIndex:indexPath.row];
         return cell;
-    }else
-    {
-        static NSString *CellIdentifier = @"medication";
-        DEMedicationCell *cell =(DEMedicationCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        cell.drugName.text=[[myMedicationList objectAtIndex:indexPath.row] valueForKey:@"drugName"];
-        cell.drugImage.image=[UIImage imageWithData:[[myMedicationList objectAtIndex:indexPath.row] valueForKey:@"drugImage"]];
-        return cell;
-
     }
+    
+    else{
+        if(indexPath.section == 0){
+            static NSString *CellIdentifier = @"medication";
+            DEMedicationComplianceCell *cell =(DEMedicationComplianceCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+            cell.label.text=[[myMedicationList objectAtIndex:indexPath.row] valueForKey:@"drugName"];
+            SFGaugeView *meterView =[self getMeterView:20];
+            [cell.meterContainer addSubview:meterView];
+            return cell;
+            }
+        else{
+            static NSString *CellIdentifier = @"ocp";
+            DEOCPCell *cell =(DEOCPCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+            int ocpValueLeft=3, ocpValueRight=14;
+            cell.ocpValueLeft.text=[NSString stringWithFormat:@"%d",ocpValueLeft];
+            cell.ocpValueRight.text=[NSString stringWithFormat:@"%d",ocpValueRight];
+            cell.ocpStatusLabelLeft.text = [self getStatusBasedOnOcpValue:ocpValueLeft];
+            cell.ocpStatusLabelRight.text = [self getStatusBasedOnOcpValue:ocpValueRight];
+            cell.ocpStatusLabelLeft.textColor=[self getColourBasedOnStatus:cell.ocpStatusLabelLeft.text];
+            cell.ocpStatusLabelRight.textColor=[self getColourBasedOnStatus:cell.ocpStatusLabelRight.text];
+            return cell;
+        }
+    }
+}
+
+
+-(NSString * )getStatusBasedOnOcpValue:(int)ocpValue{
+    if(ocpValue >15)
+        return @"HIGH";
+    else if(ocpValue > 10)
+        return @"NORMAL";
+    else
+        return @"LOW";
+}
+
+-(UIColor *) getColourBasedOnStatus:(NSString *)status{
+    UIColor *red,*green;
+    red = [UIColor redColor];
+    green = [UIColor greenColor];
+    if([status isEqualToString:@"HIGH"] || [status isEqualToString:@"LOW"])
+        return red;
+    else
+        return green;
+}
+
+-(SFGaugeView *)getMeterView:(NSInteger) currentValue{
+    SFGaugeView *meterView = [[SFGaugeView alloc] initWithFrame:CGRectMake(60, 0, 160, 95)];
+    meterView.maxlevel=100;
+    meterView.minlevel=0;
+    meterView.needleColor = [UIColor blackColor];
+    meterView.currentLevel=currentValue;
+    meterView.userInteractionEnabled=NO;
+    meterView.bgColor = [UIColor  brownColor];
+    return meterView;
 }
 
 

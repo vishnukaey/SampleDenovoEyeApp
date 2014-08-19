@@ -33,6 +33,7 @@
 		222D020B1990FE7D005833A8 /* list-star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 222D020A1990FE7D005833A8 /* list-star-7.png */; };
 		222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D020D1991125E005833A8 /* DEMenuListItem.m */; };
 		22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22323D481992568A003B6966 /* DEConfirmViewController.m */; };
+		22B9726C19A32DD1003B2050 /* DEOCPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B9726B19A32DD1003B2050 /* DEOCPCell.m */; };
 		22D365931993ABA500BC11AF /* DEMedicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365921993ABA500BC11AF /* DEMedicationCell.m */; };
 		22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365981993B8D000BC11AF /* DEReccurenceViewController.m */; };
 		22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3659B1993B8E000BC11AF /* DEReminderViewController.m */; };
@@ -40,6 +41,10 @@
 		22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365A11993B95900BC11AF /* DEConfirmationViewController.m */; };
 		22D763811999DB35000BC1D1 /* DEAppointmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */; };
 		22E52930199A1B3600E62BC5 /* DEConfirmViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */; };
+		22E91D6319A36A1A008786E5 /* DESampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E91D6219A36A1A008786E5 /* DESampleViewController.m */; };
+		22E91D6719A36AB8008786E5 /* DEOCPDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E91D6619A36AB8008786E5 /* DEOCPDetailCell.m */; };
+		22E91D6919A36FDE008786E5 /* denovologo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E91D6819A36FDE008786E5 /* denovologo.png */; };
+		22E91D6C19A375C4008786E5 /* DEOccularPressureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E91D6B19A375C4008786E5 /* DEOccularPressureViewController.m */; };
 		22EAAA5519A20B6300117482 /* DEAllMedicationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAAA5419A20B6300117482 /* DEAllMedicationsViewController.m */; };
 		22EAAA5819A2423100117482 /* DEMedicationComplianceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAAA5719A2423100117482 /* DEMedicationComplianceCell.m */; };
 		22EAD908199210DD0017508F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EAD907199210DD0017508F /* AudioToolbox.framework */; };
@@ -117,6 +122,8 @@
 		222D020D1991125E005833A8 /* DEMenuListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMenuListItem.m; sourceTree = "<group>"; };
 		22323D471992568A003B6966 /* DEConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmViewController.h; sourceTree = "<group>"; };
 		22323D481992568A003B6966 /* DEConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmViewController.m; sourceTree = "<group>"; };
+		22B9726A19A32DD1003B2050 /* DEOCPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEOCPCell.h; sourceTree = "<group>"; };
+		22B9726B19A32DD1003B2050 /* DEOCPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEOCPCell.m; sourceTree = "<group>"; };
 		22D365911993ABA500BC11AF /* DEMedicationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationCell.h; sourceTree = "<group>"; };
 		22D365921993ABA500BC11AF /* DEMedicationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMedicationCell.m; sourceTree = "<group>"; };
 		22D365971993B8D000BC11AF /* DEReccurenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEReccurenceViewController.h; sourceTree = "<group>"; };
@@ -131,6 +138,13 @@
 		22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAppointmentTableCell.m; sourceTree = "<group>"; };
 		22E5292E199A1B3600E62BC5 /* DEConfirmViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmViewCell.h; sourceTree = "<group>"; };
 		22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmViewCell.m; sourceTree = "<group>"; };
+		22E91D6119A36A1A008786E5 /* DESampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESampleViewController.h; sourceTree = "<group>"; };
+		22E91D6219A36A1A008786E5 /* DESampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESampleViewController.m; sourceTree = "<group>"; };
+		22E91D6519A36AB8008786E5 /* DEOCPDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEOCPDetailCell.h; sourceTree = "<group>"; };
+		22E91D6619A36AB8008786E5 /* DEOCPDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEOCPDetailCell.m; sourceTree = "<group>"; };
+		22E91D6819A36FDE008786E5 /* denovologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = denovologo.png; sourceTree = "<group>"; };
+		22E91D6A19A375C4008786E5 /* DEOccularPressureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEOccularPressureViewController.h; sourceTree = "<group>"; };
+		22E91D6B19A375C4008786E5 /* DEOccularPressureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEOccularPressureViewController.m; sourceTree = "<group>"; };
 		22EAAA5319A20B6300117482 /* DEAllMedicationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEAllMedicationsViewController.h; sourceTree = "<group>"; };
 		22EAAA5419A20B6300117482 /* DEAllMedicationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAllMedicationsViewController.m; sourceTree = "<group>"; };
 		22EAAA5619A2423100117482 /* DEMedicationComplianceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMedicationComplianceCell.h; sourceTree = "<group>"; };
@@ -225,6 +239,8 @@
 		2214633D1990A8A00084FDCB = {
 			isa = PBXGroup;
 			children = (
+				22E91D6119A36A1A008786E5 /* DESampleViewController.h */,
+				22E91D6219A36A1A008786E5 /* DESampleViewController.m */,
 				2214634F1990A8A00084FDCB /* DenovoEyeApp */,
 				221463501990A8A00084FDCB /* Supporting Files */,
 				221463481990A8A00084FDCB /* Frameworks */,
@@ -320,6 +336,7 @@
 		221463911990B5530084FDCB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				22E91D6819A36FDE008786E5 /* denovologo.png */,
 				2228274B1998BD6C0095C984 /* minus-sign.png */,
 				22F95F561998BC2E00034A59 /* close-50.png */,
 				222D020A1990FE7D005833A8 /* list-star-7.png */,
@@ -328,9 +345,19 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		22E91D6419A36A58008786E5 /* OccularPressureViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22E91D6A19A375C4008786E5 /* DEOccularPressureViewController.h */,
+				22E91D6B19A375C4008786E5 /* DEOccularPressureViewController.m */,
+			);
+			name = OccularPressureViewControllers;
+			sourceTree = "<group>";
+		};
 		22EAD934199238780017508F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				22E91D6419A36A58008786E5 /* OccularPressureViewControllers */,
 				22EAD937199238C70017508F /* LoginViewControllers */,
 				22EAD936199238AC0017508F /* MedicationViewController */,
 				22ECAE2C199B5C2800A66A4E /* AppointmentVIewControllers */,
@@ -395,6 +422,10 @@
 				22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */,
 				22EAAA5619A2423100117482 /* DEMedicationComplianceCell.h */,
 				22EAAA5719A2423100117482 /* DEMedicationComplianceCell.m */,
+				22B9726A19A32DD1003B2050 /* DEOCPCell.h */,
+				22B9726B19A32DD1003B2050 /* DEOCPCell.m */,
+				22E91D6519A36AB8008786E5 /* DEOCPDetailCell.h */,
+				22E91D6619A36AB8008786E5 /* DEOCPDetailCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -518,6 +549,7 @@
 				221463541990A8A00084FDCB /* InfoPlist.strings in Resources */,
 				221463951990B57D0084FDCB /* Welcome.jpg in Resources */,
 				22F95F571998BC2E00034A59 /* close-50.png in Resources */,
+				22E91D6919A36FDE008786E5 /* denovologo.png in Resources */,
 				2214635D1990A8A00084FDCB /* Main.storyboard in Resources */,
 				222D020B1990FE7D005833A8 /* list-star-7.png in Resources */,
 			);
@@ -575,6 +607,7 @@
 				22ECAE3B199B857800A66A4E /* DEPhysicianTableCell.m in Sources */,
 				22D3659F1993B8F300BC11AF /* DEAppoinmentViewController.m in Sources */,
 				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
+				22B9726C19A32DD1003B2050 /* DEOCPCell.m in Sources */,
 				22ECAE35199B80BB00A66A4E /* DEPhysicianLogViewController.m in Sources */,
 				22E52930199A1B3600E62BC5 /* DEConfirmViewCell.m in Sources */,
 				222D02091990F29D005833A8 /* Utilities.m in Sources */,
@@ -582,15 +615,18 @@
 				222D020E1991125E005833A8 /* DEMenuListItem.m in Sources */,
 				22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */,
 				221463801990A8FB0084FDCB /* DEWelcomeViewController.m in Sources */,
+				22E91D6719A36AB8008786E5 /* DEOCPDetailCell.m in Sources */,
 				2214638A1990AF820084FDCB /* DEMedicationViewController.m in Sources */,
 				22323D491992568A003B6966 /* DEConfirmViewController.m in Sources */,
 				22ECAE3E199B8B4200A66A4E /* DEParsePhysicianModel.m in Sources */,
 				22D365931993ABA500BC11AF /* DEMedicationCell.m in Sources */,
 				22FC186B199C7A9200A5DFCA /* DEAppoinmentsAddNewViewController.m in Sources */,
+				22E91D6C19A375C4008786E5 /* DEOccularPressureViewController.m in Sources */,
 				22FC187A199C8B0E00A5DFCA /* Entity.m in Sources */,
 				22FC187D199C8B0F00A5DFCA /* Appoinment.m in Sources */,
 				220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */,
 				22D763811999DB35000BC1D1 /* DEAppointmentTableCell.m in Sources */,
+				22E91D6319A36A1A008786E5 /* DESampleViewController.m in Sources */,
 				221463561990A8A00084FDCB /* main.m in Sources */,
 				2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */,
 				22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */,

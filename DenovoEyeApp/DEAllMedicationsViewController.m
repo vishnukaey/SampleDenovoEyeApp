@@ -95,6 +95,10 @@
     medication = [[ParseMedicationDBModal alloc] init];
     medication.drugName=[[myMedicationList objectAtIndex:row] valueForKey:@"drugName"];
     medication.drugImageData=[[myMedicationList objectAtIndex:row] valueForKey:@"drugImage"];
+    medication.frequency=[[myMedicationList objectAtIndex:row] valueForKey:@"frequency"];
+    medication.reccurence=[[myMedicationList objectAtIndex:row] valueForKey:@"reccurence"];
+    medication.reminder=[[myMedicationList objectAtIndex:row] valueForKey:@"reminder"];
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

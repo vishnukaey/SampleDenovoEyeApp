@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MSSimpleGauge.xcscheme</key>
+		<key>Pods-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ReactiveCocoa.xcscheme</key>
+		<key>Pods-SFGaugeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2FDEA28D47364F8B900E7D6C</key>
+		<key>1CA5400BBAC44483A9E744D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>71490932688D42E3BF7A09C2</key>
+		<key>2E18B7AC92EB4CC4AAA4690E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>740E49E538F743D393EF1E77</key>
+		<key>BC61BDC42B0E4116973D7211</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFB993F5CDDD4251AA96E49E</key>
+		<key>BD406DF883BC419980C7ABA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F789D4CDF3474FB78B501126</key>
+		<key>FC696044092144018D5D5ED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
