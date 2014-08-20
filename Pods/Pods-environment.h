@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_LEColorPicker 0
 #define COCOAPODS_VERSION_PATCH_LEColorPicker 3
 
+// MDCalendar
+#define COCOAPODS_POD_AVAILABLE_MDCalendar
+#define COCOAPODS_VERSION_MAJOR_MDCalendar 0
+#define COCOAPODS_VERSION_MINOR_MDCalendar 0
+#define COCOAPODS_VERSION_PATCH_MDCalendar 2
+
 // ReactiveCocoa
 #define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2

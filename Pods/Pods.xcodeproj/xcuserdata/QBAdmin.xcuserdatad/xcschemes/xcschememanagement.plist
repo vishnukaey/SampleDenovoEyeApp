@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MDCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1CA5400BBAC44483A9E744D6</key>
+		<key>440D4C3389374C27B8A926CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E18B7AC92EB4CC4AAA4690E</key>
+		<key>734284DBD2604FB0BC171D22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC61BDC42B0E4116973D7211</key>
+		<key>7CA845CAF54F4C53B71426D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD406DF883BC419980C7ABA6</key>
+		<key>9C1FFABE157144D28DB1F1EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC696044092144018D5D5ED1</key>
+		<key>A6813048828B4CE48BB8B944</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB8B84F7F23A40FBBDB73D48</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220536CA19A465D300E7347A /* argos.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 220536C619A465D300E7347A /* argos.jpeg */; };
+		220536CB19A465D300E7347A /* flipkart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 220536C719A465D300E7347A /* flipkart.jpeg */; };
+		220536CC19A465D300E7347A /* rediff.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 220536C819A465D300E7347A /* rediff.jpeg */; };
+		220536CD19A465D300E7347A /* alibaba.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 220536C919A465D300E7347A /* alibaba.jpeg */; };
+		220536D019A469F200E7347A /* DERewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220536CF19A469F200E7347A /* DERewardsViewController.m */; };
+		220536D419A4718800E7347A /* DESampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220536D319A4718800E7347A /* DESampleViewController.m */; };
 		220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */; };
 		220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */; };
 		220EAC9D1993948600E8FCC6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EAC9C1993948600E8FCC6 /* CoreData.framework */; };
@@ -41,7 +47,6 @@
 		22D365A21993B95900BC11AF /* DEConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D365A11993B95900BC11AF /* DEConfirmationViewController.m */; };
 		22D763811999DB35000BC1D1 /* DEAppointmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */; };
 		22E52930199A1B3600E62BC5 /* DEConfirmViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */; };
-		22E91D6319A36A1A008786E5 /* DESampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E91D6219A36A1A008786E5 /* DESampleViewController.m */; };
 		22E91D6719A36AB8008786E5 /* DEOCPDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E91D6619A36AB8008786E5 /* DEOCPDetailCell.m */; };
 		22E91D6919A36FDE008786E5 /* denovologo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E91D6819A36FDE008786E5 /* denovologo.png */; };
 		22E91D6C19A375C4008786E5 /* DEOccularPressureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E91D6B19A375C4008786E5 /* DEOccularPressureViewController.m */; };
@@ -84,6 +89,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220536C619A465D300E7347A /* argos.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = argos.jpeg; sourceTree = "<group>"; };
+		220536C719A465D300E7347A /* flipkart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flipkart.jpeg; sourceTree = "<group>"; };
+		220536C819A465D300E7347A /* rediff.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rediff.jpeg; sourceTree = "<group>"; };
+		220536C919A465D300E7347A /* alibaba.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alibaba.jpeg; sourceTree = "<group>"; };
+		220536CE19A469F200E7347A /* DERewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DERewardsViewController.h; sourceTree = "<group>"; };
+		220536CF19A469F200E7347A /* DERewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DERewardsViewController.m; sourceTree = "<group>"; };
+		220536D219A4718800E7347A /* DESampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESampleViewController.h; sourceTree = "<group>"; };
+		220536D319A4718800E7347A /* DESampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESampleViewController.m; sourceTree = "<group>"; };
 		220EAC9219938EBC00E8FCC6 /* DEDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEDataHandler.h; sourceTree = "<group>"; };
 		220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEDataHandler.m; sourceTree = "<group>"; };
 		220EAC9619938EFA00E8FCC6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -138,8 +151,6 @@
 		22D763801999DB35000BC1D1 /* DEAppointmentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAppointmentTableCell.m; sourceTree = "<group>"; };
 		22E5292E199A1B3600E62BC5 /* DEConfirmViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEConfirmViewCell.h; sourceTree = "<group>"; };
 		22E5292F199A1B3600E62BC5 /* DEConfirmViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEConfirmViewCell.m; sourceTree = "<group>"; };
-		22E91D6119A36A1A008786E5 /* DESampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESampleViewController.h; sourceTree = "<group>"; };
-		22E91D6219A36A1A008786E5 /* DESampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESampleViewController.m; sourceTree = "<group>"; };
 		22E91D6519A36AB8008786E5 /* DEOCPDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEOCPDetailCell.h; sourceTree = "<group>"; };
 		22E91D6619A36AB8008786E5 /* DEOCPDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEOCPDetailCell.m; sourceTree = "<group>"; };
 		22E91D6819A36FDE008786E5 /* denovologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = denovologo.png; sourceTree = "<group>"; };
@@ -224,6 +235,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220536D119A4714B00E7347A /* RewardsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				220536CE19A469F200E7347A /* DERewardsViewController.h */,
+				220536CF19A469F200E7347A /* DERewardsViewController.m */,
+			);
+			name = RewardsViewControllers;
+			sourceTree = "<group>";
+		};
 		220EAC9B1993932000E8FCC6 /* Coredata */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,8 +259,8 @@
 		2214633D1990A8A00084FDCB = {
 			isa = PBXGroup;
 			children = (
-				22E91D6119A36A1A008786E5 /* DESampleViewController.h */,
-				22E91D6219A36A1A008786E5 /* DESampleViewController.m */,
+				220536D219A4718800E7347A /* DESampleViewController.h */,
+				220536D319A4718800E7347A /* DESampleViewController.m */,
 				2214634F1990A8A00084FDCB /* DenovoEyeApp */,
 				221463501990A8A00084FDCB /* Supporting Files */,
 				221463481990A8A00084FDCB /* Frameworks */,
@@ -336,6 +356,10 @@
 		221463911990B5530084FDCB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				220536C619A465D300E7347A /* argos.jpeg */,
+				220536C719A465D300E7347A /* flipkart.jpeg */,
+				220536C819A465D300E7347A /* rediff.jpeg */,
+				220536C919A465D300E7347A /* alibaba.jpeg */,
 				22E91D6819A36FDE008786E5 /* denovologo.png */,
 				2228274B1998BD6C0095C984 /* minus-sign.png */,
 				22F95F561998BC2E00034A59 /* close-50.png */,
@@ -357,6 +381,7 @@
 		22EAD934199238780017508F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				220536D119A4714B00E7347A /* RewardsViewControllers */,
 				22E91D6419A36A58008786E5 /* OccularPressureViewControllers */,
 				22EAD937199238C70017508F /* LoginViewControllers */,
 				22EAD936199238AC0017508F /* MedicationViewController */,
@@ -544,11 +569,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220536CD19A465D300E7347A /* alibaba.jpeg in Resources */,
+				220536CB19A465D300E7347A /* flipkart.jpeg in Resources */,
 				2228274C1998BD6C0095C984 /* minus-sign.png in Resources */,
 				221463621990A8A00084FDCB /* Images.xcassets in Resources */,
+				220536CA19A465D300E7347A /* argos.jpeg in Resources */,
 				221463541990A8A00084FDCB /* InfoPlist.strings in Resources */,
 				221463951990B57D0084FDCB /* Welcome.jpg in Resources */,
 				22F95F571998BC2E00034A59 /* close-50.png in Resources */,
+				220536CC19A465D300E7347A /* rediff.jpeg in Resources */,
 				22E91D6919A36FDE008786E5 /* denovologo.png in Resources */,
 				2214635D1990A8A00084FDCB /* Main.storyboard in Resources */,
 				222D020B1990FE7D005833A8 /* list-star-7.png in Resources */,
@@ -609,6 +638,7 @@
 				221463871990AF5A0084FDCB /* DEDashBoardViewController.m in Sources */,
 				22B9726C19A32DD1003B2050 /* DEOCPCell.m in Sources */,
 				22ECAE35199B80BB00A66A4E /* DEPhysicianLogViewController.m in Sources */,
+				220536D019A469F200E7347A /* DERewardsViewController.m in Sources */,
 				22E52930199A1B3600E62BC5 /* DEConfirmViewCell.m in Sources */,
 				222D02091990F29D005833A8 /* Utilities.m in Sources */,
 				22D3659C1993B8E000BC11AF /* DEReminderViewController.m in Sources */,
@@ -626,13 +656,13 @@
 				22FC187D199C8B0F00A5DFCA /* Appoinment.m in Sources */,
 				220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */,
 				22D763811999DB35000BC1D1 /* DEAppointmentTableCell.m in Sources */,
-				22E91D6319A36A1A008786E5 /* DESampleViewController.m in Sources */,
 				221463561990A8A00084FDCB /* main.m in Sources */,
 				2214635A1990A8A00084FDCB /* DEAppDelegate.m in Sources */,
 				22D365991993B8D000BC11AF /* DEReccurenceViewController.m in Sources */,
 				22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */,
 				22EAAA5819A2423100117482 /* DEMedicationComplianceCell.m in Sources */,
 				22ECAE2F199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m in Sources */,
+				220536D419A4718800E7347A /* DESampleViewController.m in Sources */,
 				220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */,
 				221463831990A96C0084FDCB /* DELoginViewController.m in Sources */,
 			);

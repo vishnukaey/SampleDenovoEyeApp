@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB8B84F7F23A40FBBDB73D48"
-               BuildableName = "libPods-ReactiveCocoa.a"
-               BlueprintName = "Pods-ReactiveCocoa"
+               BlueprintIdentifier = "7CA845CAF54F4C53B71426D2"
+               BuildableName = "libPods-MDCalendar.a"
+               BlueprintName = "Pods-MDCalendar"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

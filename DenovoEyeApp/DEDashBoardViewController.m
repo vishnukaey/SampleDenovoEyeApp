@@ -124,7 +124,6 @@
         cell.menuListItem.text=[menuItems objectAtIndex:indexPath.row];
         return cell;
     }
-    
     else{
         if(indexPath.section == 0){
             static NSString *CellIdentifier = @"medication";
@@ -170,13 +169,13 @@
 }
 
 -(SFGaugeView *)getMeterView:(NSInteger) currentValue{
-    SFGaugeView *meterView = [[SFGaugeView alloc] initWithFrame:CGRectMake(60, 0, 160, 95)];
+    SFGaugeView *meterView = [[SFGaugeView alloc] initWithFrame:CGRectMake(70, 5, 160, 95)];
     meterView.maxlevel=100;
     meterView.minlevel=0;
-    meterView.needleColor = [UIColor blackColor];
+    meterView.needleColor = [UIColor brownColor];
     meterView.currentLevel=currentValue;
     meterView.userInteractionEnabled=NO;
-    meterView.bgColor = [UIColor  brownColor];
+    meterView.bgColor = [UIColor  lightGrayColor];
     return meterView;
 }
 

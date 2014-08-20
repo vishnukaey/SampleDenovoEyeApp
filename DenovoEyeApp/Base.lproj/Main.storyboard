@@ -99,7 +99,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJd-Qq-YGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1012" y="1294"/>
+            <point key="canvasLocation" x="-860" y="1254"/>
         </scene>
         <!--All Medications View Controller - MEDICATION-->
         <scene sceneID="tK7-KQ-NHF">
@@ -486,6 +486,35 @@ U3RheSBvbiB0b3Agb2YgeW91ciBtZWRpY2F0aW9uA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FjB-aM-MsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-200" y="1254"/>
+        </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="pW4-mi-uLv">
+            <objects>
+                <viewController id="Wgi-BX-x4C" customClass="DESampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpx-NT-OeU"/>
+                        <viewControllerLayoutGuide type="bottom" id="nmP-UW-Ctm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ebY-1k-CdK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-MD-TcV">
+                                <rect key="frame" x="112" y="110" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="BZB-MD-TcV" id="kyc-iY-a5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCF-qA-7BJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="2365"/>
         </scene>
         <!--View Controller - TIMELINE-->
         <scene sceneID="s1Y-km-gLe">
@@ -1073,10 +1102,13 @@ U3RheSBvbiB0b3Agb2YgeW91ciBtZWRpY2F0aW9uA
                                     <outlet property="delegate" destination="CZX-i9-I3l" id="Rmk-mS-Lhn"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8E-Tt-lqn">
+                            <searchBar contentMode="redraw" fixedFrame="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8E-Tt-lqn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CZX-i9-I3l" id="N3n-NP-MEu"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1216,10 +1248,10 @@ U3RheSBvbiB0b3Agb2YgeW91ciBtZWRpY2F0aW9uA
             </objects>
             <point key="canvasLocation" x="2159" y="1455"/>
         </scene>
-        <!--Sample View Controller - REWARDS-->
+        <!--Rewards View Controller - REWARDS-->
         <scene sceneID="Z4v-RD-lIj">
             <objects>
-                <viewController id="lvQ-Ha-hX0" customClass="DESampleViewController" sceneMemberID="viewController">
+                <viewController id="lvQ-Ha-hX0" customClass="DERewardsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zoD-js-zy3"/>
                         <viewControllerLayoutGuide type="bottom" id="GzM-Kx-ODP"/>
@@ -1385,6 +1417,7 @@ AVAILABLE FOR REDEMPTION</string>
     </scenes>
     <resources>
         <image name="Welcome.jpg" width="320" height="382"/>
+        <image name="Welcome.jpg" width="320" height="382"/>
         <image name="list-star-7.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1394,6 +1427,6 @@ AVAILABLE FOR REDEMPTION</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="yvZ-24-WQ7"/>
-        <segue reference="TGD-mr-XcB"/>
+        <segue reference="dC6-Ca-IRg"/>
     </inferredMetricsTieBreakers>
 </document>

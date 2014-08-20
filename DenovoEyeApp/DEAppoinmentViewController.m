@@ -10,12 +10,18 @@
 #import "DEConfirmationViewController.h"
 #import "DEAppointmentTableCell.h"
 
-@interface DEAppoinmentViewController (){
+@interface DEAppoinmentViewController () <MDCalendarDelegate>{
     NSMutableArray *appoinmentArray;
     UIDatePicker *datePicker,*timePicker;
     UITextField *activeField;
     NSMutableDictionary *appointmentDict;
+    UIView *calenderAccessoryView;
 }
+
+@property (nonatomic, strong) NSDate *startDate;
+@property (nonatomic, strong) NSDate *endDate;
+@property (nonatomic, assign) NSDate *firstDayOfStartMonth;
+@property (nonatomic, strong) MDCalendar *calendarView;
 
 @end
 
@@ -35,6 +41,8 @@
     appoinmentArray=[[NSMutableArray alloc]initWithObjects:@"Provider or Doctor",@"Date of Appointment",@"Time of Appointment", nil];
     appointmentDict =[[ NSMutableDictionary alloc]init];
     [self createADateAPicker];
+    self.calendarView = [self createACalenderView:[NSDate date]];
+//    [self createCalenderAccessoryView];
 }
 
 - (IBAction)skipToConfirm:(id)sender {
@@ -46,25 +54,36 @@
 
 #pragma -mark Picker Datasource and Delegates
 -(void) createADateAPicker{
-    datePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
     timePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
      timePicker.backgroundColor=[UIColor groupTableViewBackgroundColor];
-     datePicker.backgroundColor=[UIColor groupTableViewBackgroundColor];
-    [datePicker addTarget:self
-                action:@selector(datePickerValueChanged:)
-                forControlEvents:UIControlEventValueChanged];
     [timePicker addTarget:self
                 action:@selector(timePickerValueChanged:)
                 forControlEvents:UIControlEventValueChanged];
 }
 
-
--(void) datePickerValueChanged:(id) sender{
-    NSDate *date= datePicker.date;
-    activeField.text=[self getDateStringFromDate:date];
-    [appointmentDict setValue:activeField.text forKey:@"date"];
+-(MDCalendar * ) createACalenderView: (NSDate *) startDate{
+    MDCalendar *calendarView = [[MDCalendar alloc] init];
+    calendarView.backgroundColor = [UIColor whiteColor];
+    calendarView.lineSpacing = 0.f;
+    calendarView.itemSpacing = 0.0f;
+    calendarView.borderColor = [UIColor lightGrayColor];
+    calendarView.borderHeight = .5f;
+    calendarView.showsBottomSectionBorder = YES;
+    
+    calendarView.textColor = [UIColor lightGrayColor];
+    calendarView.headerTextColor = [UIColor lightGrayColor];
+    calendarView.weekdayTextColor = [UIColor grayColor];
+    calendarView.cellBackgroundColor = [UIColor whiteColor];
+    
+    calendarView.highlightColor = [UIColor darkGrayColor];
+    calendarView.indicatorColor = [UIColor colorWithWhite:0.85 alpha:.8];
+    NSDate *endDate = [startDate dateByAddingMonths:0];
+    calendarView.startDate = startDate;
+    calendarView.endDate = endDate;
+    calendarView.delegate = self;
+    calendarView.canSelectDaysBeforeStartDate = YES;
+    return calendarView;
 }
-
 
 -(NSString *)getDateStringFromDate :(NSDate *)date {
     NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
@@ -73,6 +92,45 @@
     return dateString;
 }
 
+//-(void) createCalenderAccessoryView{
+//    calenderAccessoryView = [[UIView alloc] init]
+//    ;
+//    calenderAccessoryView.backgroundColor= [UIColor darkGrayColor];
+//    UIButton *nextmonth = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    nextmonth.frame = CGRectMake(260.f, 0.f, 50, 15);
+//    [nextmonth setTitle:@"Next"
+//             forState:(UIControlState)UIControlStateNormal];
+//    nextmonth.tintColor = [UIColor whiteColor];
+//    [nextmonth addTarget:self
+//                action:@selector(goToNextMonth:)
+//      forControlEvents:(UIControlEvents)UIControlEventTouchDown];
+//    
+//    UIButton *previousMonth = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    previousMonth.frame = CGRectMake(0.f, 0.f, 70, 15);
+//    previousMonth.tintColor = [UIColor whiteColor];
+//    [previousMonth setTitle:@"Previous"
+//               forState:(UIControlState)UIControlStateNormal];
+//    [previousMonth addTarget:self
+//                  action:@selector(goTopreviousMonth:)
+//        forControlEvents:(UIControlEvents)UIControlEventTouchDown];
+//    [calenderAccessoryView addSubview:nextmonth];
+//    [calenderAccessoryView addSubview:previousMonth];
+//}
+
+
+//-(void) goToNextMonth:(id) sender{
+//    NSDate *startDate = [self.calendarView.endDate dateByAddingMonths:1];
+//    _calendarView = [self createACalenderView:startDate];
+//    [self.appointmentTableView reloadData];
+//    
+//}
+//
+//-(void) goTopreviousMonth:(id) sender{
+//    NSDate *enddate = self.calendarView.startDate;
+//    self.calendarView.endDate = self.calendarView.startDate;
+//    self.calendarView.startDate =[enddate dateByAddingMonths:-1];
+//
+//}
 
 -(NSString *)getTimeStringFromDate :(NSDate *)date {
     NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
@@ -88,6 +146,21 @@
     [appointmentDict setValue:activeField.text forKey:@"time"];
 }
 
+- (void)calendarView:(MDCalendar *)calendarView didSelectDate:(NSDate *)date{
+    activeField.text = [self getDateStringFromDate:date];
+}
+
+
+- (BOOL) calendarView:(MDCalendar *)calendarView shouldShowIndicatorForDate:(NSDate *)date
+{
+    return [date day] % 4 == 1;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [[self view] endEditing:YES];
+}
+
+
 
 #pragma -mark TableView Delegates
 
@@ -95,6 +168,12 @@
     return 3;
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    calenderAccessoryView.frame =  CGRectMake(0, 0, 320, 20);
+    _calendarView.frame = CGRectMake(0, 0, 320, 355);
+    _calendarView.contentInset = UIEdgeInsetsMake([self.topLayoutGuide length], 0, [self.bottomLayoutGuide length], 0);
+}
 
 -(UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"appointmentCell";
@@ -104,7 +183,8 @@
     
     if(indexPath.row == 1){
         datePicker.datePickerMode = UIDatePickerModeDate;
-        cell.textField.inputView=datePicker;
+        cell.textField.inputView=_calendarView;
+//        cell.textField.inputAccessoryView = calenderAccessoryView;
     }
     if (indexPath.row == 2) {
         timePicker.datePickerMode=UIDatePickerModeTime;

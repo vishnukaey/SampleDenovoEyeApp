@@ -19,10 +19,10 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
+
 
 - (void)viewDidLoad
 {
@@ -32,9 +32,13 @@
 	self.photo.image=[UIImage imageWithData:[self.physician.photo getData]];
     self.physicianName.text=self.physician.name;
 }
+
+
 - (IBAction)makeNewAppoinment:(id)sender {
     [self performSegueWithIdentifier:@"addNew" sender:self];
 }
+
+
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     DEAppoinmentsAddNewViewController *add=[segue destinationViewController];

@@ -1,6 +1,7 @@
 PODS:
   - ASValueTrackingSlider (0.9.4)
   - LEColorPicker (1.0.3)
+  - MDCalendar (0.0.2)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3.1):
@@ -13,12 +14,14 @@ PODS:
 DEPENDENCIES:
   - ASValueTrackingSlider
   - LEColorPicker
+  - MDCalendar
   - ReactiveCocoa
   - SFGaugeView
 
 SPEC CHECKSUMS:
   ASValueTrackingSlider: 74a4bbf70c8cf43d29b701ff4c7659fc5d0afd99
   LEColorPicker: cd557bb4a723a7f44d96573b214a0787b640acda
+  MDCalendar: 6f46db4d1229370a6bc7fc98f60404bf44aeec46
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   SFGaugeView: d2d25bc2a47829e9ebac4bae55276f33b42e7fb5
 

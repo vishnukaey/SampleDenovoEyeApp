@@ -33,18 +33,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    PFQuery *query=[DEParsePhysicianModel query];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        physicians = [objects mutableCopy];
-        [self.physicianTable reloadData];
-    }];
+    [self getPhysiciansList:@""];
     DEDataHandler *handler =[[DEDataHandler alloc]init];
     NSArray *hello= [handler getAllAppoinments];
     NSLog(@"Appointments are %@",hello);
 }
 
+-(void) getPhysiciansList:(NSString *) queryString{
+    PFQuery *query=[DEParsePhysicianModel query];
+    if(![queryString isEqualToString:@""])
+        [query whereKey:@"name" containsString:[queryString capitalizedString]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        physicians = [objects mutableCopy];
+        [self.physicianTable reloadData];
+    }];
+}
 
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+    
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return physicians.count;
 }
@@ -73,8 +83,19 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    NSLog(@"Text did change :)");
+    [self getPhysiciansList:searchText];
+    [self.physicianTable reloadData];
+}
+
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+}
+
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
 
