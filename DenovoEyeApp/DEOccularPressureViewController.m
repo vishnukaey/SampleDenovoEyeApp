@@ -30,8 +30,20 @@
 	// Do any additional setup after loading the view.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+
+-(ASValueTrackingSlider * ) getTrackerView:(int)currentPosition{
+    ASValueTrackingSlider *trackerView = [[ASValueTrackingSlider alloc] initWithFrame:CGRectMake(20, 0, 200, 50)];
+    trackerView.minimumValue = 0;
+    trackerView.maximumValue = 40;
+    trackerView.value=25;
+    trackerView.thumbTintColor=[UIColor blueColor];
+    return trackerView;
+}
+
+
+#pragma mark - TableView Delegates
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return 2;
 }
@@ -52,16 +64,6 @@
     cell.lastUpdateLabel.text = [df stringFromDate:now];
     return cell;
 }
-
--(ASValueTrackingSlider * ) getTrackerView:(int)currentPosition{
-    ASValueTrackingSlider *trackerView = [[ASValueTrackingSlider alloc] initWithFrame:CGRectMake(20, 0, 200, 50)];
-    trackerView.minimumValue = 0;
-    trackerView.maximumValue = 40;
-    trackerView.value=25;
-    trackerView.thumbTintColor=[UIColor blueColor];
-    return trackerView;
-}
-
 
 
 - (void)didReceiveMemoryWarning

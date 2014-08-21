@@ -29,11 +29,12 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad{
     [super viewDidLoad];
 
 }
+
 
 
 -(void) viewWillAppear:(BOOL)animated{
@@ -43,26 +44,31 @@
     [self.tableView reloadData];
 }
 
+
+
 - (IBAction)addMedication:(id)sender {
     [self performSegueWithIdentifier:@"add" sender:self];
 }
 
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
 
 #pragma mark - Table view data source
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
     return myMedicationList.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"medication";
     DEMedicationCell *cell = (DEMedicationCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     NSString *name=[[myMedicationList objectAtIndex:indexPath.row] valueForKey:@"drugName"];
@@ -74,22 +80,29 @@
     return cell;
 }
 
+
+
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     NSString *header= [[NSString alloc] init];
     header=[NSString stringWithFormat:@"%lu Medications",(unsigned long)myMedicationList.count];
     return header;
 }
 
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 35.0;
 }
 
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self prepareSelectedObject:indexPath.row];
     [self performSegueWithIdentifier:@"reconfirm" sender:self];
-    
 }
+
+
 
 -(void) prepareSelectedObject:(NSInteger)row{
     medication = [[ParseMedicationDBModal alloc] init];
@@ -100,6 +113,7 @@
     medication.reminder=[[myMedicationList objectAtIndex:row] valueForKey:@"reminder"];
     
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"reconfirm"]){

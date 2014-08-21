@@ -18,7 +18,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -36,6 +35,7 @@
 
 
 -(void) viewDidAppear:(BOOL)animated{
+    
     [super viewDidAppear:animated];
     [UIView animateWithDuration:1.0
                      animations:^{
@@ -43,16 +43,16 @@
          frame.origin.y = 0;
          self.imageView.frame = frame;
      }
-                     completion:^(BOOL finished)
-     {
-         NSLog(@"Completed");
-         
-     }];
+                     completion:^(BOOL finished){}];
 }
+
+
 
 - (IBAction)login:(id)sender {
         [self performSegueWithIdentifier:@"loginScreen" sender:self];
 }
+
+
 
 - (void)viewDidLoad
 {

@@ -12,7 +12,6 @@
 		220536CC19A465D300E7347A /* rediff.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 220536C819A465D300E7347A /* rediff.jpeg */; };
 		220536CD19A465D300E7347A /* alibaba.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 220536C919A465D300E7347A /* alibaba.jpeg */; };
 		220536D019A469F200E7347A /* DERewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220536CF19A469F200E7347A /* DERewardsViewController.m */; };
-		220536D419A4718800E7347A /* DESampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220536D319A4718800E7347A /* DESampleViewController.m */; };
 		220EAC9419938EBC00E8FCC6 /* DEDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */; };
 		220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220EAC9519938EFA00E8FCC6 /* Model.xcdatamodeld */; };
 		220EAC9D1993948600E8FCC6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EAC9C1993948600E8FCC6 /* CoreData.framework */; };
@@ -96,8 +95,6 @@
 		220536C919A465D300E7347A /* alibaba.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alibaba.jpeg; sourceTree = "<group>"; };
 		220536CE19A469F200E7347A /* DERewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DERewardsViewController.h; sourceTree = "<group>"; };
 		220536CF19A469F200E7347A /* DERewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DERewardsViewController.m; sourceTree = "<group>"; };
-		220536D219A4718800E7347A /* DESampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESampleViewController.h; sourceTree = "<group>"; };
-		220536D319A4718800E7347A /* DESampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESampleViewController.m; sourceTree = "<group>"; };
 		220EAC9219938EBC00E8FCC6 /* DEDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEDataHandler.h; sourceTree = "<group>"; };
 		220EAC9319938EBC00E8FCC6 /* DEDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEDataHandler.m; sourceTree = "<group>"; };
 		220EAC9619938EFA00E8FCC6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -261,8 +258,6 @@
 		2214633D1990A8A00084FDCB = {
 			isa = PBXGroup;
 			children = (
-				220536D219A4718800E7347A /* DESampleViewController.h */,
-				220536D319A4718800E7347A /* DESampleViewController.m */,
 				2214634F1990A8A00084FDCB /* DenovoEyeApp */,
 				221463501990A8A00084FDCB /* Supporting Files */,
 				221463481990A8A00084FDCB /* Frameworks */,
@@ -384,12 +379,12 @@
 		22EAD934199238780017508F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				220536D119A4714B00E7347A /* RewardsViewControllers */,
-				22E91D6419A36A58008786E5 /* OccularPressureViewControllers */,
+				22EAD935199238920017508F /* DashBoardViewController */,
 				22EAD937199238C70017508F /* LoginViewControllers */,
 				22EAD936199238AC0017508F /* MedicationViewController */,
 				22ECAE2C199B5C2800A66A4E /* AppointmentVIewControllers */,
-				22EAD935199238920017508F /* DashBoardViewController */,
+				22E91D6419A36A58008786E5 /* OccularPressureViewControllers */,
+				220536D119A4714B00E7347A /* RewardsViewControllers */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -666,7 +661,6 @@
 				22EAD932199235390017508F /* ParseMedicationDBModal.m in Sources */,
 				22EAAA5819A2423100117482 /* DEMedicationComplianceCell.m in Sources */,
 				22ECAE2F199B5CCD00A66A4E /* DEAppointmentsAppointmentViewController.m in Sources */,
-				220536D419A4718800E7347A /* DESampleViewController.m in Sources */,
 				220EAC9719938EFA00E8FCC6 /* Model.xcdatamodeld in Sources */,
 				221463831990A96C0084FDCB /* DELoginViewController.m in Sources */,
 			);

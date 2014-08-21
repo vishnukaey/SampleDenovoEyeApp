@@ -25,18 +25,17 @@
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     medicalDetails=[[NSMutableArray alloc] init];
     NSMutableString *reminders=[[NSMutableString alloc] init];
-    sectionHeaders =[[NSMutableArray alloc] initWithObjects:@"MEDICATION",@"FREQUENCY",@"REMINDERS AT",nil];
+    sectionHeaders =[[NSMutableArray alloc] initWithObjects:
+                     @"MEDICATION",@"FREQUENCY",@"REMINDERS AT",nil];
     [medicalDetails addObject:self.medication.drugName];
-    [medicalDetails addObject:[NSString stringWithFormat:@"%@x %@",self.medication.frequency,self.medication.reccurence]];
+    [medicalDetails addObject:[NSString stringWithFormat:
+                               @"%@x %@",self.medication.frequency,self.medication.reccurence]];
     for(NSString *reminder in self.medication.reminder)
-    {
         [reminders appendFormat:@"%@, ",reminder];
-    }
     [medicalDetails addObject:reminders];
     self.drugImage.image=[UIImage imageWithData:self.medication.drugImageData];
 

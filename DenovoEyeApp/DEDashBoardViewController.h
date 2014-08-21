@@ -10,6 +10,8 @@
 
 
 @interface DEDashBoardViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *dashBoardTableView;
-@property (weak, nonatomic) IBOutlet UITableView *dashBoardMenuTable;
+
+    @property (weak, nonatomic) IBOutlet UITableView *dashBoardTableView;
+    @property (weak, nonatomic) IBOutlet UITableView *dashBoardMenuTable;
+
 @end

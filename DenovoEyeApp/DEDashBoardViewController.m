@@ -35,18 +35,7 @@
                @"MEDICATION",@"APPOINMENTS",@"OCULAR PRESSURE",@"REWARDS",@"TIMELINE",
                @"SETTINGS",@"HELP",@"TERMS & CONDITIONS", nil];
     [self performSegueWithIdentifier:@"welcome" sender:self];
-//    [self addLocalNotification];
 }
-
-
-
-//-(void) addLocalNotification{
-//    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-//    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
-//    localNotification.alertBody = @"Your alert message";
-//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-//}
 
 
 
@@ -57,11 +46,15 @@
     [self.dashBoardTableView reloadData];
 }
 
+
+
 - (IBAction)viewMenuList:(id)sender {
     static bool menuViewShown=NO;
     menuViewShown=!menuViewShown;
     [self showMenuItemTable:menuViewShown];
 }
+
+
 
 -(void) showMenuItemTable:(bool)shouldshow{
     int offset;
@@ -82,6 +75,7 @@
 }
 
 
+
 - (IBAction)logout:(id)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setBool:NO forKey:@"loginStatus"];
@@ -89,10 +83,15 @@
     [self performSegueWithIdentifier:@"login" sender:self];
 }
 
+
+
+
 -(void) viewWillDisappear:(BOOL)animated{
     if(self.dashBoardMenuTable.frame.origin.x==0)
         [self viewMenuList:Nil];
 }
+
+
 
 
 #pragma -mark TableView Delagate
@@ -124,6 +123,7 @@
         cell.menuListItem.text=[menuItems objectAtIndex:indexPath.row];
         return cell;
     }
+    
     else{
         if(indexPath.section == 0){
             static NSString *CellIdentifier = @"medication";
@@ -149,6 +149,15 @@
 }
 
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(tableView == self.dashBoardMenuTable){
+        [self performSegueWithIdentifier:[menuItems objectAtIndex:indexPath.row] sender:self];
+    }
+}
+
+
+
 -(NSString * )getStatusBasedOnOcpValue:(int)ocpValue{
     if(ocpValue >15)
         return @"HIGH";
@@ -157,6 +166,8 @@
     else
         return @"LOW";
 }
+
+
 
 -(UIColor *) getColourBasedOnStatus:(NSString *)status{
     UIColor *red,*green;
@@ -167,6 +178,8 @@
     else
         return green;
 }
+
+
 
 -(SFGaugeView *)getMeterView:(NSInteger) currentValue{
     SFGaugeView *meterView = [[SFGaugeView alloc] initWithFrame:CGRectMake(70, 5, 160, 95)];
@@ -179,12 +192,6 @@
     return meterView;
 }
 
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(tableView == self.dashBoardMenuTable){
-        [self performSegueWithIdentifier:[menuItems objectAtIndex:indexPath.row] sender:self];
-    }
-}
 
 
 - (void)didReceiveMemoryWarning

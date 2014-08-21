@@ -29,8 +29,7 @@
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     self.capColorView.hidden=YES;
 }
@@ -42,9 +41,11 @@
 }
 
 
+
 -(void) showCapColorView{
     self.capColorView.hidden=NO;
 }
+
 
 
 - (IBAction)go:(id)sender {
@@ -77,12 +78,14 @@
 
 
 
+
 - (IBAction)pushToReccurenceController:(id)sender {
     if(mod)
         [self performSegueWithIdentifier:@"reccurence" sender:self];
     else
         [Utilities showAlert:@"Please select a Medication" withTitle:@"Alert"];
 }
+
 
 
 - (IBAction)confirmColorButtonAction:(id)sender {
@@ -102,10 +105,12 @@
 }
 
 
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self go:self];
     return YES;
 }
+
 
 
 - (void)didReceiveMemoryWarning{

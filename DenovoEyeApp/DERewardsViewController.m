@@ -16,8 +16,7 @@
 
 @implementation DERewardsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -25,13 +24,15 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     imagesInArray = [[NSArray alloc]init];
-	imagesInArray = [NSArray arrayWithObjects:@"argos.jpeg",
-                   @"flipkart.jpeg", @"alibaba.jpeg",@"rediff.jpeg", nil];
+	imagesInArray = [NSArray arrayWithObjects:
+                     @"argos.jpeg",@"flipkart.jpeg", @"alibaba.jpeg",@"rediff.jpeg", nil];
 }
+
+
+#pragma mark-  Collection View Delegates
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [imagesInArray count];
@@ -51,7 +52,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

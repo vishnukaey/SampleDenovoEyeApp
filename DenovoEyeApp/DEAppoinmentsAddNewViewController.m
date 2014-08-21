@@ -28,6 +28,16 @@
     return self;
 }
 
+- (void)viewDidLoad{
+    [super viewDidLoad];
+	[self createADateAPicker];
+    self.physicianName.text = self.physician;
+    timePicker.datePickerMode=UIDatePickerModeTime;
+    datePicker.datePickerMode=UIDatePickerModeDate;
+    appointmentDict = [[NSMutableDictionary alloc]init];
+    [appointmentDict setValue:self.physician forKey:@"provider"];
+}
+
 
 -(void) createADateAPicker{
     datePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
@@ -91,19 +101,6 @@
     NSDate *date= timePicker.date;
     activeField.text=[self getTimeStringFromDate:date];
    [appointmentDict setValue:activeField.text forKey:@"time"];
-}
-
-
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	[self createADateAPicker];
-    self.physicianName.text = self.physician;
-    timePicker.datePickerMode=UIDatePickerModeTime;
-    datePicker.datePickerMode=UIDatePickerModeDate;
-    appointmentDict = [[NSMutableDictionary alloc]init];
-    [appointmentDict setValue:self.physician forKey:@"provider"];
 }
 
 
