@@ -52,10 +52,15 @@
 }
 
 - (IBAction)doneAddingAppointment:(id)sender {
-    DEDataHandler *handler =[[DEDataHandler alloc]init];
-    [handler saveAppointment:appointmentDict];
-    [Utilities showAlert:@"Successfully added" withTitle:@"Success"];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    if([self.physicianName.text isEqualToString:@""] || [self.date.text isEqualToString:@""] || [self.time.text isEqualToString:@""]){
+        [Utilities showAlert:@"Kindly fill all the details" withTitle:@"Error"];
+    }
+    else{
+        DEDataHandler *handler =[[DEDataHandler alloc]init];
+        [handler saveAppointment:appointmentDict];
+        [Utilities showAlert:@"Successfully added" withTitle:@"Success"];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {

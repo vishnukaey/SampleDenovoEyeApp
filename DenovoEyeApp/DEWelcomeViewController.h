@@ -10,5 +10,6 @@
 
 @interface DEWelcomeViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *login;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

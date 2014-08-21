@@ -35,6 +35,21 @@
 }
 
 
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [UIView animateWithDuration:1.0
+                     animations:^{
+         CGRect frame = self.imageView.frame;
+         frame.origin.y = 0;
+         self.imageView.frame = frame;
+     }
+                     completion:^(BOOL finished)
+     {
+         NSLog(@"Completed");
+         
+     }];
+}
+
 - (IBAction)login:(id)sender {
         [self performSegueWithIdentifier:@"loginScreen" sender:self];
 }

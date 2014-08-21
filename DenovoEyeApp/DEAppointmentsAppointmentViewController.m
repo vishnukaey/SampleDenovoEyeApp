@@ -34,9 +34,6 @@
 {
     [super viewDidLoad];
     [self getPhysiciansList:@""];
-    DEDataHandler *handler =[[DEDataHandler alloc]init];
-    NSArray *hello= [handler getAllAppoinments];
-    NSLog(@"Appointments are %@",hello);
 }
 
 -(void) getPhysiciansList:(NSString *) queryString{

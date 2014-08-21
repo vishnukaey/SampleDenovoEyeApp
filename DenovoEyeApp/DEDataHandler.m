@@ -60,8 +60,11 @@
             if(!(entity.drugImage == nil) && !(entity.drugName == nil)){
                 [dict setObject:entity.drugName forKey:@"drugName"];
                 [dict setObject:entity.drugImage forKey:@"drugImage"];
+                if(entity.reccurence)
                 [dict setObject:entity.reccurence forKey:@"reccurence"];
+                if(entity.frequency)
                 [dict setObject:entity.frequency forKey:@"frequency"];
+                if(entity.reminder)
                 [dict setObject:entity.reminder forKey:@"reminder"];
             }
         [mutableArray addObject:dict];
@@ -102,7 +105,9 @@
         if(appointment.provider){
             NSMutableDictionary *dict=[[NSMutableDictionary alloc]init];
             [dict setObject:appointment.provider forKey:@"provider"];
+            if(appointment.date)
             [dict setObject:appointment.date forKey:@"date"];
+            if(appointment.time)
             [dict setObject:appointment.time forKey:@"time"];
             [mutableArray addObject:dict];
         }

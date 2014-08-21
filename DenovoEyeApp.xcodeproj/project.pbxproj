@@ -71,6 +71,7 @@
 		22ECAE35199B80BB00A66A4E /* DEPhysicianLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE34199B80BB00A66A4E /* DEPhysicianLogViewController.m */; };
 		22ECAE3B199B857800A66A4E /* DEPhysicianTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */; };
 		22ECAE3E199B8B4200A66A4E /* DEParsePhysicianModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAE3D199B8B4200A66A4E /* DEParsePhysicianModel.m */; };
+		22EE297D19A5B41F00890B63 /* placeholderImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22EE297C19A5B41F00890B63 /* placeholderImage.jpg */; };
 		22F95F571998BC2E00034A59 /* close-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F95F561998BC2E00034A59 /* close-50.png */; };
 		22FC186B199C7A9200A5DFCA /* DEAppoinmentsAddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FC186A199C7A9200A5DFCA /* DEAppoinmentsAddNewViewController.m */; };
 		22FC187A199C8B0E00A5DFCA /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FC1879199C8B0E00A5DFCA /* Entity.m */; };
@@ -184,6 +185,7 @@
 		22ECAE3A199B857800A66A4E /* DEPhysicianTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEPhysicianTableCell.m; sourceTree = "<group>"; };
 		22ECAE3C199B8B4200A66A4E /* DEParsePhysicianModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEParsePhysicianModel.h; sourceTree = "<group>"; };
 		22ECAE3D199B8B4200A66A4E /* DEParsePhysicianModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEParsePhysicianModel.m; sourceTree = "<group>"; };
+		22EE297C19A5B41F00890B63 /* placeholderImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholderImage.jpg; sourceTree = "<group>"; };
 		22F95F561998BC2E00034A59 /* close-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-50.png"; sourceTree = "<group>"; };
 		22FC1869199C7A9200A5DFCA /* DEAppoinmentsAddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEAppoinmentsAddNewViewController.h; sourceTree = "<group>"; };
 		22FC186A199C7A9200A5DFCA /* DEAppoinmentsAddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEAppoinmentsAddNewViewController.m; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 		221463911990B5530084FDCB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				22EE297C19A5B41F00890B63 /* placeholderImage.jpg */,
 				220536C619A465D300E7347A /* argos.jpeg */,
 				220536C719A465D300E7347A /* flipkart.jpeg */,
 				220536C819A465D300E7347A /* rediff.jpeg */,
@@ -573,6 +576,7 @@
 				220536CB19A465D300E7347A /* flipkart.jpeg in Resources */,
 				2228274C1998BD6C0095C984 /* minus-sign.png in Resources */,
 				221463621990A8A00084FDCB /* Images.xcassets in Resources */,
+				22EE297D19A5B41F00890B63 /* placeholderImage.jpg in Resources */,
 				220536CA19A465D300E7347A /* argos.jpeg in Resources */,
 				221463541990A8A00084FDCB /* InfoPlist.strings in Resources */,
 				221463951990B57D0084FDCB /* Welcome.jpg in Resources */,
