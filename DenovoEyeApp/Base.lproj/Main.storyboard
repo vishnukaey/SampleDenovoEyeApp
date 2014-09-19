@@ -1334,7 +1334,7 @@ AVAILABLE FOR REDEMPTION</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGF-7r-4pm">
-                                                    <rect key="frame" x="14" y="14" width="108" height="65"/>
+                                                    <rect key="frame" x="14" y="14" width="61" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-jn-VSa">
@@ -1458,7 +1458,7 @@ AVAILABLE FOR REDEMPTION</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hy4-OF-g5S"/>
+        <segue reference="yvZ-24-WQ7"/>
         <segue reference="dC6-Ca-IRg"/>
     </inferredMetricsTieBreakers>
 </document>

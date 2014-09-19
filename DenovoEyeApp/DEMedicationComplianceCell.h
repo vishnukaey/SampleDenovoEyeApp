@@ -12,3 +12,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIView *meterContainer;
 @end
+	

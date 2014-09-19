@@ -13,6 +13,7 @@
     NSMutableArray *hour,*minutes,*meridian;
     UIDatePicker *timePicker;
     UITextField *activeField;
+
 }
 
 @end
@@ -115,7 +116,6 @@
         cell.textField.font=[cell.textField.font fontWithSize:25];
         cell.textField.tintColor=[UIColor colorWithRed:29 green:152 blue:167 alpha:1];
         cell.textField.tag=indexPath.row;
-        
         cell.textField.inputView=timePicker;
         return cell;
     }
